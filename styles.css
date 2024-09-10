@@ -21,8 +21,9 @@ section {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background-image: url('hero-bg.jpg'); /* Replace with a high-res image */
+/*    background-image: url('hero-bg.jpg'); /* Replace with a high-res image */*/
     background-size: cover;
+    background-color: rgba(252,249,244,255);
     background-position: center;
     display: flex;
     justify-content: center;
