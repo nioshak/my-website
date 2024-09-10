@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Link to your favorite font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RHJFCMN163"></script>
@@ -21,30 +27,40 @@
 </head>
 <body>
 
+    <div class="hero-video">
+        <video autoplay muted loop>
+            <source src="hero-video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
     <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Niosha Kayhani</h1>
-            <p>Criminal Justice Leader | Product Management Expert | Biometrics & Security Specialist</p>
+    <section id="hero" class="hero">
+        <div class="hero-overlay">
+            <h1 class="hero-title">Niosha Kayhani</h1>
+            <p class="hero-subtitle">Product Management | Biometrics | Criminal Justice</p>
+            <a href="#about" class="scroll-down">Explore</a>
         </div>
     </section>
 
+
     <!-- About Me Section -->
-    <section id="about">
+    <section id="about" data-aos="fade-up">
         <h2>About Me</h2>
         <p>I am a seasoned professional in product management and criminal justice with expertise in identity solutions, biometric technologies, and program management...</p>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience">
+    <section id="experience" class="experience">
         <h2>Experience</h2>
-        <div class="experience-item">
-            <h3>Director of Product Management, Intel</h3>
+        <div class="experience-item" data-aos="fade-up">
+            <h3>Director of Product Management - Intel</h3>
             <p>2021 - Present</p>
-            <p>Responsible for overseeing cloud security, application security, and product development within a global organization...</p>
+            <p>Leading cloud and security products, overseeing a global team...</p>
         </div>
-        <!-- Add more experience items here -->
+        <!-- More experience items -->
     </section>
+
 
     <!-- Skills Section -->
     <section id="skills">
