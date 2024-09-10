@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Link to your favorite font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -45,59 +46,49 @@
 
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-overlay">
-            <h1 class="hero-title">Niosha Kayhani</h1>
-            <p class="hero-subtitle">CEng, MSc, BEng, MBA, PMP | Product Management Expert | Board Member | 10+ U.S. Patents</p>
-            <a href="#experience" class="scroll-down">Explore My Journey</a>
+    <section id="hero" class="bg-gray-900 text-white h-screen flex flex-col justify-center items-center text-center">
+            <h1 class="text-6xl font-bold mb-4">Niosha Kayhani</h1>
+            <p class="text-2xl mb-8">CEng, MSc, BEng, MBA, PMP | Product Management Expert | Board Member | 10+ U.S. Patents</p>
+            <a href="#about" class="bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-500 transition">Explore My Journey</a>
         </div>
     </section>
 
 
 
     <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a results-driven leader with extensive experience managing and evaluating diverse products and programs. Proven expertise in developing and executing product strategies, driving digital innovation, and identifying new growth opportunities. Skilled in building ecosystems of partners and collaborating with internal stakeholders including marketing, sales, R&D, and finance teams to execute corporate strategies. I have successfully led and transformed P&L management, product development, and organizational growth.</p>
+    <section id="about" class="bg-white py-20 px-8 text-gray-800">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-semibold mb-6 text-center">About Me</h2>
+            <p class="text-lg leading-7 text-center max-w-3xl mx-auto">
+                A results-driven leader with expertise in managing diverse products and programs. Proven expertise in executing product strategies and driving innovation.
+            </p>
+        </div>
     </section>
+
 
 
     <!-- Experience Section -->
-    <section id="experience">
-        <h2>Professional Experience</h2>
-
-        <div class="experience-item">
-            <h3>CEO & Board Director, Stealth Startup</h3>
-            <p><em>April 2024 - Present</em></p>
-            <p>Leading a startup focused on workforce management enterprise software, building platform products utilizing AI models and hybrid cloud solutions.</p>
+    <section id="experience" class="bg-gray-100 py-20 px-8">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-semibold mb-10 text-center">Professional Experience</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Experience 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-2xl font-semibold mb-2">CEO & Board Director</h3>
+                    <p class="text-sm text-gray-600">Stealth Startup | Apr 2024 - Present</p>
+                    <p class="mt-4 text-gray-700">Leading workforce management software, building AI-driven platform products...</p>
+                </div>
+                <!-- Experience 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-2xl font-semibold mb-2">Board Director</h3>
+                    <p class="text-sm text-gray-600">Intelligent Transport Systems UK | May 2019 - Present</p>
+                    <p class="mt-4 text-gray-700">Influencing strategy, financial planning, and operations as part of the Board of Directors...</p>
+                </div>
+                <!-- Add more experiences as necessary -->
+            </div>
         </div>
-
-        <div class="experience-item">
-            <h3>Board Director, Intelligent Transport Systems UK</h3>
-            <p><em>May 2019 - Present</em></p>
-            <p>Supporting and influencing strategy, financial planning, and business operations as part of the Board of Directors.</p>
-        </div>
-
-        <div class="experience-item">
-            <h3>Executive Board Member, UC San Diego</h3>
-            <p><em>February 2022 - Present</em></p>
-            <p>Supporting establishment of policies and key strategic objectives while mentoring engineering students and supporting recruitment initiatives.</p>
-        </div>
-
-        <div class="experience-item">
-            <h3>Director of International Programs & Products, Cubic</h3>
-            <p><em>July 2022 - May 2024</em></p>
-            <p>Led P&L for Cubic’s e-commerce business, serving federal, state, local, and international agencies with software solutions for forensic analysis and intelligence capabilities.</p>
-        </div>
-
-        <div class="experience-item">
-            <h3>Director of Innovation, Cubic</h3>
-            <p><em>March 2016 - July 2022</em></p>
-            <p>Oversaw 100+ engineers and product managers, developed cloud product strategies, and launched products focused on mobile payments, IoT platforms, and biometrics.</p>
-        </div>
-
-        <!-- Add more experience items as necessary -->
     </section>
+
 
 
 
@@ -119,30 +110,38 @@
 
 
     <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>MBA, Master of Business Administration</strong><br>Distinction | Focus: Finance, New Venture Creation & Innovation<br>Warwick Business School</p>
-
-        <p><strong>MSc, Engineering & Management</strong><br>Distinction | Focus: Fiber Optic Laser Systems & Manufacturing<br>University of Portsmouth</p>
-
-        <p><strong>BEng, Mechanical Engineering</strong><br>First Class Honors | University of Portsmouth</p>
-
-        <h3>Certifications</h3>
-        <ul>
-            <li>Project Management Professional (PMP)</li>
-            <li>Chartered Engineer (CEng)</li>
-            <li>Lean Six Sigma Black Belt</li>
-        </ul>
+    <section id="education" class="bg-white py-20 px-8">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-semibold mb-10 text-center">Education</h2>
+            <div class="flex flex-col space-y-6 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold">MBA, Warwick Business School</h3>
+                    <p class="text-sm text-gray-600">Distinction | Focus: Finance, Innovation</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold">MSc, Engineering & Management</h3>
+                    <p class="text-sm text-gray-600">Distinction | Focus: Fiber Optic Laser Systems</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold">BEng, Mechanical Engineering</h3>
+                    <p class="text-sm text-gray-600">First Class Honors</p>
+                </div>
+            </div>
+        </div>
     </section>
+
 
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:niosha.kayhani@gmail.com">niosha.kayhani@gmail.com</a></p>
-        <p>Phone: +1 (858) 471-1951</p>
-        <a href="https://www.linkedin.com/in/niosha-kayhani/" class="button">Connect on LinkedIn</a>
+    <section id="contact" class="bg-gray-800 text-white py-20 px-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold mb-6">Contact Me</h2>
+            <p class="text-lg mb-8">Get in touch via email or connect with me on LinkedIn.</p>
+            <a href="mailto:niosha.kayhani@gmail.com" class="bg-blue-600 py-3 px-6 rounded-md text-white hover:bg-blue-500 transition">Email Me</a>
+            <a href="https://www.linkedin.com/in/niosha-kayhani/" class="ml-4 bg-gray-700 py-3 px-6 rounded-md text-white hover:bg-gray-600 transition">LinkedIn</a>
+        </div>
     </section>
+
 
 
     <script src="script.js"></script>
