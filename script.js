@@ -16,3 +16,13 @@ const menuToggle = document.querySelector('.menu-toggle');
 menuToggle.addEventListener('click', () => {
     navbar.classList.toggle('active');
 });
+
+// Function to open the modal
+function openModal(modalId) {
+    document.getElementById(modalId).classList.remove('hidden');
+}
+
+// Function to close the modal
+function closeModal(modalId) {
+    document.getElementById(modalId).classList.add('hidden');
+}
