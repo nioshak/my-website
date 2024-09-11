@@ -26,3 +26,9 @@ function openModal(modalId) {
 function closeModal(modalId) {
     document.getElementById(modalId).classList.add('hidden');
 }
+
+
+AOS.init({
+  duration: 1000,  // Animation duration
+  once: true       // Whether animation should happen only once or every time you scroll
+});
