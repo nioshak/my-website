@@ -72,85 +72,263 @@
         <div class="container mx-auto">
             <h2 class="text-4xl font-semibold mb-10 text-center">Professional Experience</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
                 <!-- Experience 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                    <h3 class="text-2xl font-semibold mb-2">CEO & Board Director</h3>
-                    <p class="text-sm text-gray-600">Stealth Startup | Apr 2024 - Present</p>
-                    <p class="mt-4 text-gray-700">Leading workforce management software, building AI-driven platform products...</p>
-                </div>
-                <!-- Experience 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                    <h3 class="text-2xl font-semibold mb-2">Board Director</h3>
-                    <p class="text-sm text-gray-600">Intelligent Transport Systems UK | May 2019 - Present</p>ß
-                    <p class="mt-4 text-gray-700">Influencing strategy, financial planning, and operations as part of the Board of Directors...</p>
-                </div>
-                <!-- Experience 3 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal3')">
-                    <h3 class="text-2xl font-semibold mb-2">Director of International Programs & Products</h3>
-                    <p class="text-sm text-gray-600">Cubic | July 2022 - May 2024</p>
-                    <p class="mt-4 text-gray-700">Led P&L for Cubic’s e-commerce business, serving over 75 agencies...</p>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer flex flex-col justify-between" onclick="openModal('modal1')" style="height: 300px;">
+                    <div class="flex justify-between items-start mb-4">
+                        <!-- Company Logo and Name -->
+                        <div class="flex items-center">
+                            <img src="logo1.png" alt="Stealth Startup" class="w-10 h-10 mr-3">
+                            <div class="text-left">
+                                <h3 class="text-xl font-semibold">Stealth Startup</h3>
+                            </div>
+                        </div>
+                        <!-- Dates -->
+                        <div class="text-right">
+                            <p class="text-sm text-gray-600">Apr 2024 - Present</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-700">Leading workforce management software, building AI-driven platform products...</p>
                 </div>
 
-                <!-- Modal for Example 3 -->
+                <!-- Modal for Experience 1 -->
+                <div id="modal1" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
+                    <div class="bg-white p-8 rounded-lg shadow-lg w-1/2">
+                        <h3 class="text-3xl font-semibold mb-4">CEO & Board Director</h3>
+                        <p class="text-lg mb-4">Stealth Startup, San Diego, CA | April 2024 - Present</p>
+                        <p class="text-gray-700">Leading a workforce management enterprise software platform, utilizing AI models, hybrid cloud, and intuitive algorithms. Disrupting the space with ground-up innovation...</p>
+                        <button onclick="closeModal('modal1')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer flex flex-col justify-between" onclick="openModal('modal2')" style="height: 300px;">
+                    <div class="flex justify-between items-start mb-4">
+                        <!-- Company Logo and Name -->
+                        <div class="flex items-center">
+                            <img src="logo2.png" alt="Intelligent Transport Systems" class="w-10 h-10 mr-3">
+                            <div class="text-left">
+                                <h3 class="text-xl font-semibold">Intelligent Transport Systems</h3>
+                            </div>
+                        </div>
+                        <!-- Dates -->
+                        <div class="text-right">
+                            <p class="text-sm text-gray-600">May 2019 - Present</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-700">Supporting and influencing strategy, financial planning, and operations...</p>
+                </div>
+
+                <!-- Modal for Experience 2 -->
+                <div id="modal2" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
+                    <div class="bg-white p-8 rounded-lg shadow-lg w-1/2">
+                        <h3 class="text-3xl font-semibold mb-4">Board Director</h3>
+                        <p class="text-lg mb-4">Intelligent Transport Systems UK, London, UK | May 2019 - Present</p>
+                        <p class="text-gray-700">Supporting and influencing strategy, financial planning, and business operations as part of the Board of Directors. Facilitating international delegations and supporting growth...</p>
+                        <button onclick="closeModal('modal2')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer flex flex-col justify-between" onclick="openModal('modal3')" style="height: 300px;">
+                    <div class="flex justify-between items-start mb-4">
+                        <!-- Company Logo and Name -->
+                        <div class="flex items-center">
+                            <img src="logo3.png" alt="UC San Diego" class="w-10 h-10 mr-3">
+                            <div class="text-left">
+                                <h3 class="text-xl font-semibold">UC San Diego</h3>
+                            </div>
+                        </div>
+                        <!-- Dates -->
+                        <div class="text-right">
+                            <p class="text-sm text-gray-600">Feb 2022 - Present</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-700">Supporting the establishment of policies and key strategic objectives...</p>
+                </div>
+
+                <!-- Modal for Experience 3 -->
                 <div id="modal3" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
                     <div class="bg-white p-8 rounded-lg shadow-lg w-1/2">
-                        <h3 class="text-3xl font-semibold mb-4">Director of International Programs & Products</h3>
-                        <p class="text-lg mb-4">Cubic, San Diego, CA | July 2022 - May 2024</p>
-                        <p class="text-gray-700">
-                            Led P&L for Cubic’s e-commerce business, serving over 75 federal, state, local, and international agencies with software solutions for forensic analysis and intelligence capabilities. 
-                            - Built and grew global partnership pipelines.
-                            - Directed cross-functional teams to drive customer satisfaction and meet SLAs.
-                            - Achieved 17% revenue growth at 40% gross margin in 2023.
-                        </p>
+                        <h3 class="text-3xl font-semibold mb-4">Executive Board Member</h3>
+                        <p class="text-lg mb-4">UC San Diego, San Diego, CA | Feb 2022 - Present</p>
+                        <p class="text-gray-700">Supporting the establishment of policies, mentoring engineering students, and supporting recruitment efforts through the Corporate Affiliates Program...</p>
                         <button onclick="closeModal('modal3')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
                     </div>
                 </div>
 
                 <!-- Experience 4 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                    <h3 class="text-2xl font-semibold mb-2">Director of International Programs & Products</h3>
-                    <p class="text-sm text-gray-600">Cubic, San Diego, CA | July 2022 - May 2024</p>
-                    <p class="mt-4 text-gray-700">Led P&L for Cubic’s e-commerce business serving 75+ federal, state, local, and international agencies. Built and grew global partnerships, driving a 17% topline growth. Automated processes and launched new products for regional expansions, achieving 40% gross margin.</p>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer flex flex-col justify-between" onclick="openModal('modal4')" style="height: 300px;">
+                    <div class="flex justify-between items-start mb-4">
+                        <!-- Company Logo and Name -->
+                        <div class="flex items-center">
+                            <img src="logo4.png" alt="Cubic" class="w-10 h-10 mr-3">
+                            <div class="text-left">
+                                <h3 class="text-xl font-semibold">Cubic</h3>
+                            </div>
+                        </div>
+                        <!-- Dates -->
+                        <div class="text-right">
+                            <p class="text-sm text-gray-600">July 2022 - May 2024</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-700">Led P&L for Cubic’s e-commerce business, serving federal, state, and local agencies...</p>
+                </div>
+
+                <!-- Modal for Experience 4 -->
+                <div id="modal4" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
+                    <div class="bg-white p-8 rounded-lg shadow-lg w-1/2">
+                        <h3 class="text-3xl font-semibold mb-4">Director of International Programs & Products</h3>
+                        <p class="text-lg mb-4">Cubic, San Diego, CA | July 2022 - May 2024</p>
+                        <p class="text-gray-700">Led P&L for Cubic’s e-commerce business, serving over 75 federal, state, and local agencies. Built a global partnership pipeline and directed cross-functional teams to achieve customer satisfaction and data compliance...</p>
+                        <button onclick="closeModal('modal4')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
+                    </div>
                 </div>
 
                 <!-- Experience 5 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                    <h3 class="text-2xl font-semibold mb-2">Director of Innovation</h3>
-                    <p class="text-sm text-gray-600">Cubic, San Diego, CA | March 2016 - July 2022</p>
-                    <p class="mt-4 text-gray-700">Managed R&D portfolio with a $55M budget. Built strategic innovation capabilities and led 100+ engineers. Launched new products in mobile payments, IoT platforms, and biometrics, winning ‘Innovator of the Year’ and multiple patents.</p>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer flex flex-col justify-between" onclick="openModal('modal5')" style="height: 300px;">
+                    <div class="flex justify-between items-start mb-4">
+                        <!-- Company Logo and Name -->
+                        <div class="flex items-center">
+                            <img src="logo5.png" alt="Cubic" class="w-10 h-10 mr-3">
+                            <div class="text-left">
+                                <h3 class="text-xl font-semibold">Cubic</h3>
+                            </div>
+                        </div>
+                        <!-- Dates -->
+                        <div class="text-right">
+                            <p class="text-sm text-gray-600">March 2016 - July 2022</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-700">Built strategic innovation capabilities and led a team of 100+ engineers...</p>
+                </div>
+
+                <!-- Modal for Experience 5 -->
+                <div id="modal5" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
+                    <div class="bg-white p-8 rounded-lg shadow-lg w-1/2">
+                        <h3 class="text-3xl font-semibold mb-4">Director of Innovation</h3>
+                        <p class="text-lg mb-4">Cubic, San Diego, CA | March 2016 - July 2022</p>
+                        <p class="text-gray-700">Managed a $55M R&D portfolio, leading innovation across mobile payments, IoT platforms, and biometrics. Recognized with the Innovator of the Year award and multiple patents...</p>
+                        <button onclick="closeModal('modal5')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
+                    </div>
                 </div>
 
                 <!-- Experience 6 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                    <h3 class="text-2xl font-semibold mb-2">GCE Strategist</h3>
-                    <p class="text-sm text-gray-600">Google, Dublin, Ireland | December 2014 - January 2016</p>
-                    <p class="mt-4 text-gray-700">Optimized digital strategies for SMBs in the Nordic region, driving revenue growth of 23%. Supported process improvement on the AdWords platform and developed automated payment features for millions of users.</p>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer flex flex-col justify-between" onclick="openModal('modal6')" style="height: 300px;">
+                    <div class="flex justify-between items-start mb-4">
+                        <!-- Company Logo and Name -->
+                        <div class="flex items-center">
+                            <img src="logo6.png" alt="Google" class="w-10 h-10 mr-3">
+                            <div class="text-left">
+                                <h3 class="text-xl font-semibold">Google</h3>
+                            </div>
+                        </div>
+                        <!-- Dates -->
+                        <div class="text-right">
+                            <p class="text-sm text-gray-600">Dec 2014 - Jan 2016</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-700">Optimized digital strategies for SMBs in the Nordic region, driving revenue growth by 23%...</p>
+                </div>
+
+                <!-- Modal for Experience 6 -->
+                <div id="modal6" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
+                    <div class="bg-white p-8 rounded-lg shadow-lg w-1/2">
+                        <h3 class="text-3xl font-semibold mb-4">GCE Strategist</h3>
+                        <p class="text-lg mb-4">Google, Dublin, Ireland | Dec 2014 - Jan 2016</p>
+                        <p class="text-gray-700">Optimized digital strategies for SMBs, growing revenue by 23%. Developed an automated payment system for AdWords, affecting millions of users...</p>
+                        <button onclick="closeModal('modal6')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
+                    </div>
                 </div>
 
                 <!-- Experience 7 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                    <h3 class="text-2xl font-semibold mb-2">Manufacturing Lead</h3>
-                    <p class="text-sm text-gray-600">SPI Lasers (TRUMPF), Southampton, UK | August 2011 - November 2014</p>
-                    <p class="mt-4 text-gray-700">Led lean manufacturing and process redesigns, increasing production capacity by close to 100%. Spearheaded the deployment of opto-electronic manufacturing lines for fiber optic laser products.</p>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer flex flex-col justify-between" onclick="openModal('modal7')" style="height: 300px;">
+                    <div class="flex justify-between items-start mb-4">
+                        <!-- Company Logo and Name -->
+                        <div class="flex items-center">
+                            <img src="logo7.png" alt="SPI Lasers" class="w-10 h-10 mr-3">
+                            <div class="text-left">
+                                <h3 class="text-xl font-semibold">SPI Lasers (TRUMPF)</h3>
+                            </div>
+                        </div>
+                        <!-- Dates -->
+                        <div class="text-right">
+                            <p class="text-sm text-gray-600">Aug 2011 - Nov 2014</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-700">Led lean manufacturing and process redesigns, increasing production capacity by nearly 100%...</p>
+                </div>
+
+                <!-- Modal for Experience 7 -->
+                <div id="modal7" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
+                    <div class="bg-white p-8 rounded-lg shadow-lg w-1/2">
+                        <h3 class="text-3xl font-semibold mb-4">Manufacturing Lead</h3>
+                        <p class="text-lg mb-4">SPI Lasers (TRUMPF), Southampton, UK | Aug 2011 - Nov 2014</p>
+                        <p class="text-gray-700">Led lean manufacturing and process redesigns, boosting production capacity by nearly 100%. Deployed electro-mechanic and opto-electronic manufacturing lines for fiber optic laser products...</p>
+                        <button onclick="closeModal('modal7')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
+                    </div>
                 </div>
 
                 <!-- Experience 8 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                    <h3 class="text-2xl font-semibold mb-2">President</h3>
-                    <p class="text-sm text-gray-600">Portsmouth University Basketball, Portsmouth, UK | September 2009 - July 2011</p>
-                    <p class="mt-4 text-gray-700">Directed strategy, P&L, and recruitment. Led the team to record-breaking seasons and secured a promotion to Division I.</p>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer flex flex-col justify-between" onclick="openModal('modal8')" style="height: 300px;">
+                    <div class="flex justify-between items-start mb-4">
+                        <!-- Company Logo and Name -->
+                        <div class="flex items-center">
+                            <img src="logo8.png" alt="Portsmouth University Basketball" class="w-10 h-10 mr-3">
+                            <div class="text-left">
+                                <h3 class="text-xl font-semibold">Portsmouth University Basketball</h3>
+                            </div>
+                        </div>
+                        <!-- Dates -->
+                        <div class="text-right">
+                            <p class="text-sm text-gray-600">Sept 2009 - July 2011</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-700">Directed strategy, P&L, and recruitment, achieving record-breaking success...</p>
+                </div>
+
+                <!-- Modal for Experience 8 -->
+                <div id="modal8" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
+                    <div class="bg-white p-8 rounded-lg shadow-lg w-1/2">
+                        <h3 class="text-3xl font-semibold mb-4">President</h3>
+                        <p class="text-lg mb-4">Portsmouth University Basketball | Sept 2009 - July 2011</p>
+                        <p class="text-gray-700">Directed strategy, P&L, and recruitment for a 160+ member organization, leading the team to record-breaking success. Promoted to Division I and achieved the highest revenue growth...</p>
+                        <button onclick="closeModal('modal8')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
+                    </div>
                 </div>
 
                 <!-- Experience 9 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                    <h3 class="text-2xl font-semibold mb-2">Various Engineering & Business Development Roles</h3>
-                    <p class="text-sm text-gray-600">Apollo Fire Detectors & TopUpTunes | Previous to 2011</p>
-                    <p class="mt-4 text-gray-700">Held key roles in engineering and business development, contributing to growth and innovation in the respective organizations.</p>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer flex flex-col justify-between" onclick="openModal('modal9')" style="height: 300px;">
+                    <div class="flex justify-between items-start mb-4">
+                        <!-- Company Logo and Name -->
+                        <div class="flex items-center">
+                            <img src="logo9.png" alt="Apollo Fire Detectors & TopUpTunes" class="w-10 h-10 mr-3">
+                            <div class="text-left">
+                                <h3 class="text-xl font-semibold">Apollo Fire Detectors & TopUpTunes</h3>
+                            </div>
+                        </div>
+                        <!-- Dates -->
+                        <div class="text-right">
+                            <p class="text-sm text-gray-600">Previous to 2011</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-700">Held key roles in engineering and business development, contributing to growth and innovation...</p>
                 </div>
-                <!-- Add more experiences as necessary -->
+
+                <!-- Modal for Experience 9 -->
+                <div id="modal9" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
+                    <div class="bg-white p-8 rounded-lg shadow-lg w-1/2">
+                        <h3 class="text-3xl font-semibold mb-4">Engineering & Business Development</h3>
+                        <p class="text-lg mb-4">Apollo Fire Detectors & TopUpTunes | Previous to 2011</p>
+                        <p class="text-gray-700">Held key roles in engineering and business development, contributing to product growth and innovation in the respective organizations...</p>
+                        <button onclick="closeModal('modal9')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
+
 
 
 
