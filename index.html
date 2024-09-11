@@ -74,21 +74,27 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             
                 <!-- Experience 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer flex flex-col justify-between" onclick="openModal('modal1')" style="height: 300px;">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal1')" style="height: auto;">
                     <div class="flex justify-between items-start mb-4">
-                        <!-- Company Logo and Name -->
+                        <!-- Company Logo and Name (Left) -->
                         <div class="flex items-center">
-                            <img src="logo1.png" alt="Stealth Startup" class="w-10 h-10 mr-3">
-                            <div class="text-left">
+                            <img src="static/logo1.png" alt="Stealth Startup" class="w-12 h-12 rounded-full mr-3">
+                            <div>
                                 <h3 class="text-xl font-semibold">Stealth Startup</h3>
+                                <p class="text-sm text-gray-600">CEO & Board Director</p>
                             </div>
                         </div>
-                        <!-- Dates -->
+                        <!-- Dates (Right) -->
                         <div class="text-right">
                             <p class="text-sm text-gray-600">Apr 2024 - Present</p>
                         </div>
                     </div>
-                    <p class="text-lg text-gray-700">Leading workforce management software, building AI-driven platform products...</p>
+                    <p class="text-gray-700 mb-4">Leading workforce management software, building AI-driven platform products...</p>
+                    <!-- Tags (e.g., Full-Time, Remote) -->
+                    <div class="flex space-x-2">
+                        <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Full-Time</span>
+                        <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Remote</span>
+                    </div>
                 </div>
 
                 <!-- Modal for Experience 1 -->
@@ -96,27 +102,35 @@
                     <div class="bg-white p-8 rounded-lg shadow-lg w-1/2">
                         <h3 class="text-3xl font-semibold mb-4">CEO & Board Director</h3>
                         <p class="text-lg mb-4">Stealth Startup, San Diego, CA | April 2024 - Present</p>
-                        <p class="text-gray-700">Leading a workforce management enterprise software platform, utilizing AI models, hybrid cloud, and intuitive algorithms. Disrupting the space with ground-up innovation...</p>
+                        <p class="text-gray-700">Leading a workforce management enterprise software platform, utilizing AI models, hybrid cloud, and intuitive algorithms...</p>
                         <button onclick="closeModal('modal1')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
                     </div>
                 </div>
 
+                <!-- Repeat similar layout for other experiences -->
+
                 <!-- Experience 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer flex flex-col justify-between" onclick="openModal('modal2')" style="height: 300px;">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal2')" style="height: auto;">
                     <div class="flex justify-between items-start mb-4">
-                        <!-- Company Logo and Name -->
+                        <!-- Company Logo and Name (Left) -->
                         <div class="flex items-center">
-                            <img src="logo2.png" alt="Intelligent Transport Systems" class="w-10 h-10 mr-3">
-                            <div class="text-left">
+                            <img src="static/logo2.png" alt="Intelligent Transport Systems" class="w-12 h-12 rounded-full mr-3">
+                            <div>
                                 <h3 class="text-xl font-semibold">Intelligent Transport Systems</h3>
+                                <p class="text-sm text-gray-600">Board Director</p>
                             </div>
                         </div>
-                        <!-- Dates -->
+                        <!-- Dates (Right) -->
                         <div class="text-right">
                             <p class="text-sm text-gray-600">May 2019 - Present</p>
                         </div>
                     </div>
-                    <p class="text-lg text-gray-700">Supporting and influencing strategy, financial planning, and operations...</p>
+                    <p class="text-gray-700 mb-4">Supporting and influencing strategy, financial planning, and operations...</p>
+                    <!-- Tags (e.g., Full-Time, Remote) -->
+                    <div class="flex space-x-2">
+                        <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Full-Time</span>
+                        <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Remote</span>
+                    </div>
                 </div>
 
                 <!-- Modal for Experience 2 -->
@@ -128,6 +142,9 @@
                         <button onclick="closeModal('modal2')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
                     </div>
                 </div>
+
+
+
 
                 <!-- Experience 3 -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer flex flex-col justify-between" onclick="openModal('modal3')" style="height: 300px;">
