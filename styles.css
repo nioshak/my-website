@@ -90,6 +90,7 @@ h2 {
 .experience-item h3, .education-item h3 {
     font-size: 1.75rem;
     margin-bottom: 10px;
+    color: black;
 }
 
 p {
