@@ -27,6 +27,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 <body>
@@ -37,6 +38,7 @@
         <div class="nav-logo"><a href="#hero">Niosha Kayhani</a></div>
         <ul class="nav-links">
             <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Me</a></li>
             <li><a href="#experience">Experiences</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -54,335 +56,351 @@
             <p class="text-2xl mb-8">CEng, MSc, BEng, MBA, PMP | Board Member | 10+ U.S. Patents</p>
             <a href="#about" class="bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-500 transition">Explore My Journey</a>
         </div>
-    </section>
-
-
-
-    <!-- About Me Section -->
-    <section id="about" class="bg-white py-20 px-8 text-gray-800">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-semibold mb-6 text-center">About Me</h2>
-            <p class="text-lg leading-7 text-center max-w-3xl mx-auto">
-                A results-driven leader with expertise in managing diverse products and programs. Proven expertise in executing product strategies and driving innovation.
-            </p>
+        <!-- Animated Chevron -->
+        <div class="scroll-down-chevron">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
         </div>
     </section>
 
 
 
+    <!-- About Me Section -->
+    <section id="about" class="bg-white py-20 px-8 text-gray-800 relative">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-semibold mb-6 text-center">About Me</h2>
+            <p class="text-lg leading-7 text-center max-w-3xl mx-auto mb-6">
+                A driver of multi-million dollar programs, product lines, and management of global functions and P&L.
+                With skills and background as an engineer and in business development, settings and have utilized that same variety of skills in startups, as both an investor and founder.
+            </p>
+        </div>
+        <h2 class="text-3xl font-semibold mb-2 text-center">Skills</h2>
+        <ul class="text-center mb-6">
+            <li>Strategic Planning</li>
+            <li>Innovation Management</li>
+            <li>P&L Management</li>
+            <!-- more items here -->
+        </ul>
+        <!-- Chevron -->
+        <div class="scroll-down-chevron" data-scroll-to="#experience">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9" stroke="#111827"></polyline>
+            </svg>
+        </div>
+    </section>
+
+
+
+
     <!-- Experience Section -->
-    <section id="experience" class="bg-gray-100 py-20 px-8">
+    <section id="experience" class="py-20 px-8" style="background: #FCF9F4;">
         <div class="container mx-auto">
             <h2 class="text-4xl font-semibold mb-6 text-center" style="color: #1f2937;">Professional Experience</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            
+            <div class="timeline">
+
                 <!-- Experience 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal1')" style="height: auto;">
-                    <div class="flex justify-between items-start mb-4">
-                        <!-- Company Logo and Name (Left) -->
-                        <div class="flex items-start">
-                            <img src="static/logo1.png" alt="Stealth" class="w-10 h-10 mr-3" style="margin-top:3px;">
-                            <div>
-                                <h3 class="text-xl font-semibold" style="text-align: left;">Stealth</h3>
-                                <p class="text-sm text-gray-600">CEO & Board Director</p>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal1')" style="height: auto;">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex items-start">
+                                <img src="static/logo1.png" alt="Stealth" class="w-10 h-10 mr-3" style="margin-top:3px;">
+                                <div>
+                                    <h3 class="text-xl font-semibold" style="text-align: left;">Co-Founder / CEO</h3>
+                                    <p class="text-sm text-gray-600" style="text-align: left;">LM7</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm text-gray-500">Apr 2024 - Present</p>
                             </div>
                         </div>
-                        <!-- Dates (Right) -->
-                        <div class="text-right">
-                            <p class="text-sm text-gray-500">Apr 2024 - Present</p>
+                        <p class="text-gray-700 mb-5" style="font-weight: normal;">Enterprise workforce management software platform and AI products...[read more]</p>
+                        <div class="flex space-x-2 mb-0">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Full-Time</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">San Diego, CA</span>
                         </div>
-                    </div>
-                    <p class="text-gray-700 mb-5" style="font-weight: normal;">Enterprise workforce management software platform and AI products [read more]</p>
-                    <!-- Tags (e.g., Full-Time, Remote) -->
-                    <div class="flex space-x-2 mb-0">
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Full-Time</span>
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">San Diego, CA</span>
-                    </div>
-                </div>
-
-                <!-- Modal for Experience 1 -->
-                <div id="modal1" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
-                    <div class="bg-white p-8 rounded-lg shadow-lg w-1/2">
-                        <h3 class="text-3xl font-semibold mb-4">CEO & Board Director</h3>
-                        <p class="text-lg mb-4 font-semibold" style="color: #1f2937;">Stealth | San Diego, CA | April 2024 - Present</p>
-                        <p class="text-gray-700">Leading a workforce management enterprise software platform, utilizing AI models, hybrid cloud, and intuitive algorithms. Disrupting the space with ground-up innovation with a small team of 5 extremely talented individuals.
-                        We are building our own proprietary algorithms and utilizing the best inference models on the market. Early traction with customers and business model is new in this vertical.</p>
-                        <button onclick="closeModal('modal1')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
                     </div>
                 </div>
 
                 <!-- Experience 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal2')" style="height: auto;">
-                    <div class="flex justify-between items-start mb-4">
-                        <!-- Company Logo and Name (Left) -->
-                        <div class="flex items-start">
-                            <img src="static/logo2.png" alt="Intelligent Transport Systems" class="w-10 h-10 mr-3" style="margin-top:3px;">
-                            <div>
-                                <h3 class="text-xl font-semibold" style="text-align: left;">ITS UK</h3>
-                                <p class="text-sm text-gray-600">Board Director</p>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal2')" style="height: auto;">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex items-start">
+                                <img src="static/logo2.png" alt="ITS UK" class="w-10 h-10 mr-3" style="margin-top:3px;">
+                                <div>
+                                    <h3 class="text-xl font-semibold" style="text-align: left;">ITS UK</h3>
+                                    <p class="text-sm text-gray-600">Board Director</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm text-gray-500">May 2019 - Present</p>
                             </div>
                         </div>
-                        <!-- Dates (Right) -->
-                        <div class="text-right">
-                            <p class="text-xs text-gray-500">May 2019 - Present</p>
+                        <p class="text-gray-700 mb-4">Driving strategy, financial planning, and operations [read more]</p>
+                        <div class="flex space-x-2 mb-0">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Part-Time</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Remote</span>
                         </div>
-                    </div>
-                    <p class="text-gray-700 mb-4">Driving strategy, financial planning, and operations [read more]</p>
-                    <!-- Tags (e.g., Full-Time, Remote) -->
-                    <div class="flex space-x-2 mb-0">
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Part-Time</span>
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Remote</span>
-                    </div>
-                </div>
-
-                <!-- Modal for Experience 2 -->
-                <div id="modal2" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
-                    <div class="bg-white p-8 rounded-lg shadow-lg w-1/2">
-                        <h3 class="text-3xl font-semibold mb-4">Board Director</h3>
-                        <p class="text-lg mb-4">Intelligent Transport Systems UK, London, UK | May 2019 - Present</p>
-                        <p class="text-gray-700">Supporting and influencing strategy, financial planning, and business operations as part of the Board of Directors. Facilitating international delegations and supporting growth...</p>
-                        <button onclick="closeModal('modal2')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
                     </div>
                 </div>
 
                 <!-- Experience 3 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal3')" style="height: auto;">
-                    <div class="flex justify-between items-start mb-4">
-                        <!-- Company Logo and Name (Left) -->
-                        <div class="flex items-start">
-                            <img src="static/logo3.png" alt="UC San Diego" class="w-10 h-10 mr-3" style="margin-top:3px;">
-                            <div>
-                                <h3 class="text-xl font-semibold" style="text-align: left;">UC San Diego</h3>
-                                <p class="text-sm text-gray-600">Executive Board Member</p>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal3')" style="height: auto;">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex items-start">
+                                <img src="static/logo3.png" alt="UC San Diego" class="w-10 h-10 mr-3" style="margin-top:3px;">
+                                <div>
+                                    <h3 class="text-xl font-semibold" style="text-align: left;">UC San Diego</h3>
+                                    <p class="text-sm text-gray-600">Executive Board Member</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm text-gray-500">Feb 2022 - Present</p>
                             </div>
                         </div>
-                        <!-- Dates (Right) -->
-                        <div class="text-right">
-                            <p class="text-sm text-gray-500">Feb 2022 - Present</p>
+                        <p class="text-gray-700 mb-5" style="font-weight: normal;">Supporting the establishment of policies and key strategic objectives...[read more]</p>
+                        <div class="flex space-x-2 mb-0">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Part-Time</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">San Diego, CA</span>
                         </div>
-                    </div>
-                    <p class="text-gray-700 mb-5" style="font-weight: normal;">Supporting the establishment of policies and key strategic objectives... [read more]</p>
-                    <!-- Tags (e.g., Full-Time, Remote) -->
-                    <div class="flex space-x-2 mb-0">
-                        <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Part-Time</span>
-                        <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">San Diego, CA</span>
-                    </div>
-                </div>
-
-                <!-- Modal for Experience 3 -->
-                <div id="modal3" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
-                    <div class="bg-white p-8 rounded-lg shadow-lg w-1/2">
-                        <h3 class="text-3xl font-semibold mb-4">Executive Board Member</h3>
-                        <p class="text-lg mb-4">UC San Diego, San Diego, CA | Feb 2022 - Present</p>
-                        <p class="text-gray-700">Supporting the establishment of policies, mentoring engineering students, and supporting recruitment efforts through the Corporate Affiliates Program...</p>
-                        <button onclick="closeModal('modal3')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
                     </div>
                 </div>
 
                 <!-- Experience 4 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal4')" style="height: auto;">
-                    <div class="flex justify-between items-start mb-4">
-                        <!-- Company Logo and Name (Left) -->
-                        <div class="flex items-start">
-                            <img src="static/logo4.png" alt="Cubic" class="w-10 h-10 mr-3" style="margin-top:3px;">
-                            <div>
-                                <h3 class="text-xl font-semibold" style="text-align: left;">Cubic</h3>
-                                <p class="text-sm text-gray-600">Director of International Programs & Products</p>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal4')" style="height: auto;">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex items-start">
+                                <img src="static/logo4.png" alt="Cubic" class="w-10 h-10 mr-3" style="margin-top:3px;">
+                                <div>
+                                    <h3 class="text-xl font-semibold" style="text-align: left;">Cubic</h3>
+                                    <p class="text-sm text-gray-600">Director of International Programs & Products</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm text-gray-500">July 2022 - May 2024</p>
                             </div>
                         </div>
-                        <!-- Dates (Right) -->
-                        <div class="text-right">
-                            <p class="text-sm text-gray-500">July 2022 - May 2024</p>
+                        <p class="text-gray-700 mb-5" style="font-weight: normal;">Led P&L for Cubic’s e-commerce business, serving federal, state, and local agencies... [read more]</p>
+                        <div class="flex space-x-2 mb-0">
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">Full-Time</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">San Diego, CA</span>
                         </div>
-                    </div>
-                    <p class="text-gray-700 mb-5" style="font-weight: normal;">Led P&L for Cubic’s e-commerce business, serving federal, state, and local agencies... [read more]</p>
-                    <!-- Tags (e.g., Full-Time, Remote) -->
-                    <div class="flex space-x-2 mb-0">
-                        <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">Full-Time</span>
-                        <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">San Diego, CA</span>
-                    </div>
-                </div>
-
-                <!-- Modal for Experience 4 -->
-                <div id="modal4" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
-                    <div class="bg-white p-8 rounded-lg shadow-lg w-1/2">
-                        <h3 class="text-3xl font-semibold mb-4">Director of International Programs & Products</h3>
-                        <p class="text-lg mb-4">Cubic, San Diego, CA | July 2022 - May 2024</p>
-                        <p class="text-gray-700">Led P&L for Cubic’s e-commerce business, serving over 75 federal, state, and local agencies. Built a global partnership pipeline and directed cross-functional teams to achieve customer satisfaction and data compliance...</p>
-                        <button onclick="closeModal('modal4')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
                     </div>
                 </div>
 
                 <!-- Experience 5 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal5')" style="height: auto;">
-                    <div class="flex justify-between items-start mb-4">
-                        <!-- Company Logo and Name (Left) -->
-                        <div class="flex items-start">
-                            <img src="static/logo5.png" alt="Cubic" class="w-10 h-10 mr-3" style="margin-top:3px;">
-                            <div>
-                                <h3 class="text-xl font-semibold" style="text-align: left;">Cubic</h3>
-                                <p class="text-sm text-gray-600">Director of Innovation</p>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal5')" style="height: auto;">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex items-start">
+                                <img src="static/logo5.png" alt="Cubic" class="w-10 h-10 mr-3" style="margin-top:3px;">
+                                <div>
+                                    <h3 class="text-xl font-semibold" style="text-align: left;">Cubic</h3>
+                                    <p class="text-sm text-gray-600">Director of Innovation</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm text-gray-500">March 2016 - July 2022</p>
                             </div>
                         </div>
-                        <!-- Dates (Right) -->
-                        <div class="text-right">
-                            <p class="text-sm text-gray-500">March 2016 - July 2022</p>
+                        <p class="text-gray-700 mb-5" style="font-weight: normal;">Built strategic innovation capabilities and led a team of 100+ engineers...[read more]</p>
+                        <div class="flex space-x-2 mb-0">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Full-Time</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">San Diego, CA</span>
                         </div>
-                    </div>
-                    <p class="text-gray-700 mb-5" style="font-weight: normal;">Built strategic innovation capabilities and led a team of 100+ engineers... [read more]</p>
-                    <!-- Tags (e.g., Full-Time, Remote) -->
-                    <div class="flex space-x-2 mb-0">
-                        <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Full-Time</span>
-                        <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">San Diego, CA</span>
-                    </div>
-                </div>
-
-                <!-- Modal for Experience 5 -->
-                <div id="modal5" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
-                    <div class="bg-white p-8 rounded-lg shadow-lg w-1/2">
-                        <h3 class="text-3xl font-semibold mb-4">Director of Innovation</h3>
-                        <p class="text-lg mb-4">Cubic, San Diego, CA | March 2016 - July 2022</p>
-                        <p class="text-gray-700">Managed a $55M R&D portfolio, leading innovation across mobile payments, IoT platforms, and biometrics. Recognized with the Innovator of the Year award and multiple patents...</p>
-                        <button onclick="closeModal('modal5')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
                     </div>
                 </div>
 
                 <!-- Experience 6 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal6')" style="height: auto;">
-                    <div class="flex justify-between items-start mb-4">
-                        <!-- Company Logo and Name (Left) -->
-                        <div class="flex items-start">
-                            <img src="static/logo6.png" alt="Google" class="w-10 h-10 mr-3" style="margin-top:3px;">
-                            <div>
-                                <h3 class="text-xl font-semibold" style="text-align: left;">Google</h3>
-                                <p class="text-sm text-gray-600">GCE Strategist</p>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal6')" style="height: auto;">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex items-start">
+                                <img src="static/logo6.png" alt="Google" class="w-10 h-10 mr-3" style="margin-top:3px;">
+                                <div>
+                                    <h3 class="text-xl font-semibold" style="text-align: left;">Google</h3>
+                                    <p class="text-sm text-gray-600">GCE Strategist</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm text-gray-500">Dec 2014 - Jan 2016</p>
                             </div>
                         </div>
-                        <!-- Dates (Right) -->
-                        <div class="text-right">
-                            <p class="text-sm text-gray-500">Dec 2014 - Jan 2016</p>
+                        <p class="text-gray-700 mb-5" style="font-weight: normal;">Optimized digital strategies for SMBs in the Nordic region...[read more]</p>
+                        <div class="flex space-x-2 mb-0">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Full-Time</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Remote</span>
                         </div>
-                    </div>
-                    <p class="text-gray-700 mb-5" style="font-weight: normal;">Optimized digital strategies for SMBs in the Nordic region... [read more]</p>
-                    <!-- Tags (e.g., Full-Time, Remote) -->
-                    <div class="flex space-x-2 mb-0">
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Full-Time</span>
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Remote</span>
-                    </div>
-                </div>
-
-                <!-- Modal for Experience 6 -->
-                <div id="modal6" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
-                    <div class="bg-white p-8 rounded-lg shadow-lg w-1/2">
-                        <h3 class="text-3xl font-semibold mb-4">GCE Strategist</h3>
-                        <p class="text-lg mb-4">Google, Dublin, Ireland | Dec 2014 - Jan 2016</p>
-                        <p class="text-gray-700">Optimized digital strategies for SMBs, growing revenue by 23%. Developed an automated payment system for AdWords, affecting millions of users...</p>
-                        <button onclick="closeModal('modal6')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
                     </div>
                 </div>
 
                 <!-- Experience 7 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal7')" style="height: auto;">
-                    <div class="flex justify-between items-start mb-4">
-                        <!-- Company Logo and Name (Left) -->
-                        <div class="flex items-start">
-                            <img src="static/logo7.png" alt="SPI Lasers" class="w-10 h-10 mr-3" style="margin-top:3px;">
-                            <div>
-                                <h3 class="text-xl font-semibold" style="text-align: left;">SPI Lasers (TRUMPF)</h3>
-                                <p class="text-sm text-gray-600">Manufacturing Lead</p>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal7')" style="height: auto;">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex items-start">
+                                <img src="static/logo7.png" alt="SPI Lasers" class="w-10 h-10 mr-3" style="margin-top:3px;">
+                                <div>
+                                    <h3 class="text-xl font-semibold" style="text-align: left;">SPI Lasers (TRUMPF)</h3>
+                                    <p class="text-sm text-gray-600">Manufacturing Lead</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm text-gray-500">Aug 2011 - Nov 2014</p>
                             </div>
                         </div>
-                        <!-- Dates (Right) -->
-                        <div class="text-right">
-                            <p class="text-sm text-gray-500">Aug 2011 - Nov 2014</p>
+                        <p class="text-gray-700 mb-5" style="font-weight: normal;">Led lean manufacturing and process redesigns, increasing production capacity by nearly 100%...[read more]</p>
+                        <div class="flex space-x-2 mb-0">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Full-Time</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Southampton, UK</span>
                         </div>
-                    </div>
-                    <p class="text-gray-700 mb-5" style="font-weight: normal;">Led lean manufacturing and process redesigns, increasing production capacity by nearly 100%... [read more]</p>
-                    <!-- Tags (e.g., Full-Time, Remote) -->
-                    <div class="flex space-x-2 mb-0">
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Full-Time</span>
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Southampton, UK</span>
-                    </div>
-                </div>
-
-                <!-- Modal for Experience 7 -->
-                <div id="modal7" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
-                    <div class="bg-white p-8 rounded-lg shadow-lg w-1/2">
-                        <h3 class="text-3xl font-semibold mb-4">Manufacturing Lead</h3>
-                        <p class="text-lg mb-4">SPI Lasers (TRUMPF), Southampton, UK | Aug 2011 - Nov 2014</p>
-                        <p class="text-gray-700">Led lean manufacturing and process redesigns, boosting production capacity by nearly 100%. Deployed electro-mechanic and opto-electronic manufacturing lines for fiber optic laser products...</p>
-                        <button onclick="closeModal('modal7')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
                     </div>
                 </div>
 
                 <!-- Experience 8 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal8')" style="height: auto;">
-                    <div class="flex justify-between items-start mb-4">
-                        <!-- Company Logo and Name (Left) -->
-                        <div class="flex items-start">
-                            <img src="static/logo8.png" alt="Portsmouth University Basketball" class="w-10 h-10 mr-3" style="margin-top:3px;">
-                            <div>
-                                <h3 class="text-xl font-semibold" style="text-align: left;">Portsmouth University Basketball</h3>
-                                <p class="text-sm text-gray-600">President</p>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal8')" style="height: auto;">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex items-start">
+                                <img src="static/logo8.png" alt="Portsmouth University Basketball" class="w-10 h-10 mr-3" style="margin-top:3px;">
+                                <div>
+                                    <h3 class="text-xl font-semibold" style="text-align: left;">Portsmouth University Basketball</h3>
+                                    <p class="text-sm text-gray-600">President</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm text-gray-500">Sept 2009 - July 2011</p>
                             </div>
                         </div>
-                        <!-- Dates (Right) -->
-                        <div class="text-right">
-                            <p class="text-sm text-gray-500">Sept 2009 - July 2011</p>
+                        <p class="text-gray-700 mb-5" style="font-weight: normal;">Directed strategy, P&L, and recruitment, achieving record-breaking success...[read more]</p>
+                        <div class="flex space-x-2 mb-0">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Full-Time</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Portsmouth, UK</span>
                         </div>
-                    </div>
-                    <p class="text-gray-700 mb-5" style="font-weight: normal;">Directed strategy, P&L, and recruitment, achieving record-breaking success... [read more]</p>
-                    <!-- Tags (e.g., Full-Time, Remote) -->
-                    <div class="flex space-x-2 mb-0">
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Full-Time</span>
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Portsmouth, UK</span>
-                    </div>
-                </div>
-
-                <!-- Modal for Experience 8 -->
-                <div id="modal8" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
-                    <div class="bg-white p-8 rounded-lg shadow-lg w-1/2">
-                        <h3 class="text-3xl font-semibold mb-4">President</h3>
-                        <p class="text-lg mb-4">Portsmouth University Basketball | Sept 2009 - July 2011</p>
-                        <p class="text-gray-700">Directed strategy, P&L, and recruitment for a 160+ member organization, leading the team to record-breaking success. Promoted to Division I and achieved the highest revenue growth...</p>
-                        <button onclick="closeModal('modal8')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
                     </div>
                 </div>
 
                 <!-- Experience 9 -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal9')" style="height: auto;">
-                    <div class="flex justify-between items-start mb-4">
-                        <!-- Company Logo and Name (Left) -->
-                        <div class="flex items-start">
-                            <img src="static/logo9.png" alt="Apollo Fire Detectors & TopUpTunes" class="w-10 h-10 mr-3" style="margin-top:3px;">
-                            <div>
-                                <h3 class="text-xl font-semibold" style="text-align: left;">Apollo Fire Detectors & TopUpTunes</h3>
-                                <p class="text-sm text-gray-600">Engineering & Business Development</p>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal9')" style="height: auto;">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex items-start">
+                                <img src="static/logo9.png" alt="Apollo Fire Detectors & TopUpTunes" class="w-10 h-10 mr-3" style="margin-top:3px;">
+                                <div>
+                                    <h3 class="text-xl font-semibold" style="text-align: left;">Apollo Fire Detectors & TopUpTunes</h3>
+                                    <p class="text-sm text-gray-600">Engineering & Business Development</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm text-gray-500">Previous to 2011</p>
                             </div>
                         </div>
-                        <!-- Dates (Right) -->
-                        <div class="text-right">
-                            <p class="text-sm text-gray-500">Previous to 2011</p>
+                        <p class="text-gray-700 mb-5" style="font-weight: normal;">Held key roles in engineering and business development, contributing to growth and innovation...[read more]</p>
+                        <div class="flex space-x-2 mb-0">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Full-Time</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Southampton, UK</span>
                         </div>
                     </div>
-                    <p class="text-gray-700 mb-5" style="font-weight: normal;">Held key roles in engineering and business development, contributing to growth and innovation... [read more]</p>
-                    <!-- Tags (e.g., Full-Time, Remote) -->
-                    <div class="flex space-x-2 mb-0">
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Full-Time</span>
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Southampton, UK</span>
+                </div>
+
+                <!-- Modal for Experience 1 -->
+                <div id="modal1" class="modal hidden">
+                    <div class="modal-content">
+                        <h3 class="text-3xl font-semibold mb-4">CEO & Board Director</h3>
+                        <p class="text-lg mb-4 font-semibold" style="color: #1f2937;">Stealth | San Diego, CA | April 2024 - Present</p>
+                        <p class="text-gray-700">Leading a workforce management enterprise software platform, utilizing AI models, hybrid cloud, and intuitive algorithms...</p>
+                        <button onclick="closeModal('modal1')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
+                    </div>
+                </div>
+
+                <!-- Modal for Experience 2 -->
+                <div id="modal2" class="modal hidden">
+                    <div class="modal-content">
+                        <h3 class="text-3xl font-semibold mb-4">Board Director</h3>
+                        <p class="text-lg mb-4">ITS UK, London, UK | May 2019 - Present</p>
+                        <p class="text-gray-700">Supporting and influencing strategy, financial planning, and business operations...</p>
+                        <button onclick="closeModal('modal2')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
+                    </div>
+                </div>
+
+                <!-- Modal for Experience 3 -->
+                <div id="modal3" class="modal hidden">
+                    <div class="modal-content">
+                        <h3 class="text-3xl font-semibold mb-4">Executive Board Member</h3>
+                        <p class="text-lg mb-4">UC San Diego, San Diego, CA | Feb 2022 - Present</p>
+                        <p class="text-gray-700">Supporting the establishment of policies, mentoring engineering students, and supporting recruitment efforts...</p>
+                        <button onclick="closeModal('modal3')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
+                    </div>
+                </div>
+
+                <!-- Modal for Experience 4 -->
+                <div id="modal4" class="modal hidden">
+                    <div class="modal-content">
+                        <h3 class="text-3xl font-semibold mb-4">Director of International Programs & Products</h3>
+                        <p class="text-lg mb-4">Cubic, San Diego, CA | July 2022 - May 2024</p>
+                        <p class="text-gray-700">Led P&L for Cubic’s e-commerce business, serving over 75 federal, state, and local agencies...</p>
+                        <button onclick="closeModal('modal4')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
+                    </div>
+                </div>
+
+                <!-- Modal for Experience 5 -->
+                <div id="modal5" class="modal hidden">
+                    <div class="modal-content">
+                        <h3 class="text-3xl font-semibold mb-4">Director of Innovation</h3>
+                        <p class="text-lg mb-4">Cubic, San Diego, CA | March 2016 - July 2022</p>
+                        <p class="text-gray-700">Managed a $55M R&D portfolio, leading innovation across mobile payments, IoT platforms, and biometrics...</p>
+                        <button onclick="closeModal('modal5')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
+                    </div>
+                </div>
+
+                <!-- Modal for Experience 6 -->
+                <div id="modal6" class="modal hidden">
+                    <div class="modal-content">
+                        <h3 class="text-3xl font-semibold mb-4">GCE Strategist</h3>
+                        <p class="text-lg mb-4">Google, Dublin, Ireland | Dec 2014 - Jan 2016</p>
+                        <p class="text-gray-700">Optimized digital strategies for SMBs, growing revenue by 23%. Developed an automated payment system for AdWords...</p>
+                        <button onclick="closeModal('modal6')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
+                    </div>
+                </div>
+
+                <!-- Modal for Experience 7 -->
+                <div id="modal7" class="modal hidden">
+                    <div class="modal-content">
+                        <h3 class="text-3xl font-semibold mb-4">Manufacturing Lead</h3>
+                        <p class="text-lg mb-4">SPI Lasers (TRUMPF), Southampton, UK | Aug 2011 - Nov 2014</p>
+                        <p class="text-gray-700">Led lean manufacturing and process redesigns, boosting production capacity by nearly 100%...</p>
+                        <button onclick="closeModal('modal7')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
+                    </div>
+                </div>
+
+                <!-- Modal for Experience 8 -->
+                <div id="modal8" class="modal hidden">
+                    <div class="modal-content">
+                        <h3 class="text-3xl font-semibold mb-4">President</h3>
+                        <p class="text-lg mb-4">Portsmouth University Basketball | Sept 2009 - July 2011</p>
+                        <p class="text-gray-700">Directed strategy, P&L, and recruitment for a 160+ member organization, leading the team to record-breaking success...</p>
+                        <button onclick="closeModal('modal8')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
                     </div>
                 </div>
 
                 <!-- Modal for Experience 9 -->
-                <div id="modal9" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
-                    <div class="bg-white p-8 rounded-lg shadow-lg w-1/2">
+                <div id="modal9" class="modal hidden">
+                    <div class="modal-content">
                         <h3 class="text-3xl font-semibold mb-4">Engineering & Business Development</h3>
                         <p class="text-lg mb-4">Apollo Fire Detectors & TopUpTunes | Previous to 2011</p>
-                        <p class="text-gray-700">Held key roles in engineering and business development, contributing to product growth and innovation in the respective organizations...</p>
+                        <p class="text-gray-700">Held key roles in engineering and business development, contributing to product growth and innovation...</p>
                         <button onclick="closeModal('modal9')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
                     </div>
                 </div>
 
+                <div class="scroll-down-chevron" data-scroll-to="#another-section">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1a202c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
             </div>
         </div>
     </section>
@@ -391,21 +409,7 @@
 
 
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Strategic Planning</li>
-            <li>Innovation Management</li>
-            <li>P&L Management</li>
-            <li>Data Analytics</li>
-            <li>Product Development</li>
-            <li>IoT & Automation</li>
-            <li>Biometrics</li>
-            <li>Fiber Optics</li>
-            <!-- Add more as necessary -->
-        </ul>
-    </section>
+
 
 
     <!-- Education Section -->
@@ -429,60 +433,67 @@
         </div>
     </section>
 
-
-
-    <div class="timeline">
-        <!-- Experience 1 -->
-        <div class="timeline-item" data-aos="fade-up">
-            <div class="timeline-content">
-                <h3>CEO & Board Director</h3>
-                <h4>Stealth Startup</h4>
-                <p>Apr 2024 - Present</p>
-                <p>Leading workforce management software, building AI-driven platform products.</p>
-            </div>
-        </div>
-
-        <!-- Experience 2 -->
-        <div class="timeline-item" data-aos="fade-up">
-            <div class="timeline-content">
-                <h3>Board Director</h3>
-                <h4>Intelligent Transport Systems UK</h4>
-                <p>May 2019 - Present</p>
-                <p>Supporting and influencing strategy, financial planning, and operations.</p>
-            </div>
-        </div>
-
-        <!-- Experience 3 -->
-        <div class="timeline-item" data-aos="fade-up">
-            <div class="timeline-content">
-                <h3>Executive Board Member</h3>
-                <h4>UC San Diego</h4>
-                <p>Feb 2022 - Present</p>
-                <p>Supporting policies and mentoring engineering students.</p>
-            </div>
-        </div>
-
-        <!-- Add more timeline items here -->
-    </div>
-
-
-
     <!-- Contact Section -->
     <section id="contact" class="bg-gray-800 text-white py-20 px-8">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-semibold mb-6">Contact Me</h2>
             <p class="text-lg mb-8">Get in touch via email or connect with me on LinkedIn.</p>
-            <a href="mailto:niosha.kayhani@gmail.com" class="bg-blue-600 py-3 px-6 rounded-md text-white hover:bg-blue-500 transition">Email Me</a>
-            <a href="https://www.linkedin.com/in/niosha-kayhani/" class="ml-4 bg-gray-700 py-3 px-6 rounded-md text-white hover:bg-gray-600 transition">LinkedIn</a>
+            <!-- Email Me Button with Icon -->
+            <a href="mailto:niosha.kayhani@gmail.com" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500 mr-4">
+                <i class="fas fa-envelope mr-2"></i> Email Me
+            </a>
+            <!-- LinkedIn Button with Icon -->
+            <a href="https://www.linkedin.com/in/niosha-kayhani/" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500 mr-4" target="https://www.linkedin.com/in/niosha-kayhani/" rel="noopener noreferrer">
+                <i class="fab fa-linkedin mr-2"></i> LinkedIn
+            </a>
+            <!-- Download Resume Button with Icon -->
+            <a href="static/Niosha_Kayhani_Resume.pdf" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500" download>
+                <i class="fas fa-download mr-2"></i> Download My Resume
+            </a>
+
         </div>
+
+        <div class="container mx-auto">
+                <h2 class="text-4xl font-semibold mb-6 text-center" style="color: #1f2937;"></h2>
+                <form id="contact-form" method="POST" class="bg-white p-6 rounded-lg shadow-md max-w-lg mx-auto">
+                    <div class="mb-4">
+                        <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-medium text-gray-700">Your Email</label>
+                        <input type="email" id="email" name="email" class="mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
+                        <textarea id="message" name="message" class="mt-1 p-2 block w-full border-gray-300 rounded-md shadow-sm" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Send Message</button>
+                </form>
+            </div>
+
+
     </section>
 
 
 
     <script src="script.js"></script>
+    <script src="config.js"></script>
+    <script>
+        // Ensure that the config.js is loaded and the FORM_ID is available
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById('contact-form');
+            if (form && CONFIG.FORM_ID) {
+                form.action = `https://formspree.io/f/${CONFIG.FORM_ID}`;
+            }
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+          duration: 1000,  // Animation duration
+          once: true       // Whether animation should happen only once or every time you scroll
+        });
     </script>
 </body>
 </html>
