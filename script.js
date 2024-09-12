@@ -45,8 +45,8 @@ function closeModal(modalId) {
 
 
 
-    document.querySelector('.scroll-down-chevron').addEventListener('click', function () {
-        document.getElementById('next-section').scrollIntoView({ behavior: 'smooth' });
-    });
+document.querySelector('.scroll-down-chevron').addEventListener('click', function () {
+    document.getElementById('next-section').scrollIntoView({ behavior: 'smooth' });
+});
 
 

@@ -418,6 +418,7 @@ html {
 .timeline-item::after {
     content: "";
     position: absolute;
+    max-height: 205px;
     left: 24px;
     top: 0;
     bottom: -50px;
@@ -433,7 +434,8 @@ html {
     border-radius: 6px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     position: relative;
-    max-width: 600px;
+    max-width: 400px;
+    width: 80%; /* Ensure cards don't stretch beyond 100% */
     font-family: Arial, sans-serif;
 }
 
@@ -508,6 +510,54 @@ html {
     height: 40px;
     stroke: white; /* You can change this to any color */
 }
+
+
+.hidden {
+    display: none;
+}
+
+
+
+.copy-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.copy-tooltip.show {
+    opacity: 1;
+}
+
+/* Popup notification styles */
+.popup-notification {
+    position: fixed;
+    background-color: #4CAF50;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+/* Show the notification */
+.popup-notification.show {
+    opacity: 1;
+    transform: translateY(-6px); /* Smoothly move the popup */
+}
+
 
 
 
