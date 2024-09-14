@@ -225,6 +225,33 @@ p {
     cursor: pointer;
 }
 
+/* Adjusting button styles for icon mode */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0px; /* Space between buttons */
+    margin-top: 0px;
+    max-height: 40px;
+}
+
+/* Buttons fixed height and width to avoid movement when switching */
+.contact-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px; /* Set a fixed height */
+    width: 120px; /* Set a fixed width */
+    border-radius: 8px;
+    background-color: #2563eb; /* Ensure background color is set */
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* Adjust icon and text inside the button */
+.contact-buttons i {
+    font-size: 20px;
+}
+
 
 /* Responsive Navbar for Mobile Devices */
 @media (max-width: 768px) {
@@ -259,6 +286,21 @@ p {
         display: flex; /* Show menu when active on mobile */
     }
 
+    .contact-buttons {
+        padding-top: 50px; /* Smaller width in icon mode */
+    }
+
+    .contact-buttons a {
+        width: 50px; /* Smaller width in icon mode */
+    }
+
+    .contact-buttons a span {
+        display: none; /* Hide the text */
+    }
+
+    .contact-buttons i {
+        margin: 0; /* Remove any margin to avoid misalignment */
+    }
 
 }
 
