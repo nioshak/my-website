@@ -49,4 +49,8 @@ document.querySelector('.scroll-down-chevron').addEventListener('click', functio
     document.getElementById('next-section').scrollIntoView({ behavior: 'smooth' });
 });
 
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
 

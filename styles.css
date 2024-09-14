@@ -163,6 +163,7 @@ p {
     align-items: center;
     z-index: 1000; /* Ensures the navbar stays on top */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a slight shadow */
+    color: white;
 }
 
 .nav-logo a {
@@ -173,9 +174,31 @@ p {
 }
 
 .nav-links {
-    list-style: none;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on your navbar height */
+    right: 10px;
+    background-color: #333; /* Background color for mobile menu */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+/* Show the menu when the 'active' class is added */
+.nav-links.active {
     display: flex;
-    gap: 20px;
+}
+
+
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
 }
 
 .nav-links li a {
@@ -192,8 +215,23 @@ p {
     border-radius: 4px;
 }
 
+/* Ensure the hamburger menu button is on top of other elements */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Set a high z-index to ensure it stays on top */
+    display: none; /* Initially hidden, only shows on small screens */
+    cursor: pointer;
+}
+
+
 /* Responsive Navbar for Mobile Devices */
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
     .nav-links {
         display: none; /* Initially hide the menu on mobile */
         position: absolute;
@@ -205,25 +243,28 @@ p {
         gap: 15px;
         width: 200px;
         border-radius: 8px;
+        flex-direction: column;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
     }
 
     .navbar.active .nav-links {
         display: flex; /* Show menu when active on mobile */
     }
 
-    .menu-toggle {
-        display: block;
-        font-size: 2rem;
-        color: white;
-        cursor: pointer;
-    }
+
 }
 
-/* For Desktop */
-@media (min-width: 769px) {
-    .menu-toggle {
-        display: none; /* Hide the hamburger menu on desktop */
-    }
+/* Show the navigation links when active */
+.nav-links.active {
+    display: flex;
 }
 
 .hero-video {

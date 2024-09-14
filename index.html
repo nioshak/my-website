@@ -37,6 +37,7 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-logo"><a href="#hero">Niosha Kayhani</a></div>
+        </button>
         <ul class="nav-links">
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About Me</a></li>
@@ -45,17 +46,18 @@
             <li><a href="#additional">Additional</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <!-- Hamburger menu button -->
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
     </nav>
-
-    <!-- Add this icon for mobile toggling -->
-    <div class="menu-toggle">&#9776;</div>
 
 
 
     <!-- Hero Section -->
     <section id="hero" class="bg-gray-900 text-white h-screen flex flex-col justify-center items-center text-center">
-            <h1 class="text-6xl font-bold mb-4">Niosha Kayhani</h1>
-            <p class="text-2xl mb-8">CEng, MSc, BEng, MBA, PMP | Board Member | 10+ U.S. Patents</p>
+            <h1 class="text-5xl font-bold mb-4">Niosha Kayhani</h1>
+            <p class="text-2xl mb-8">CEng, MSc, BEng, MBA, PMP<br>10+ U.S. Patents<br>Board Member</p>
             <a href="#about" class="bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-500 transition">Explore My Journey</a>
         </div>
         <!-- Animated Chevron -->
@@ -71,17 +73,30 @@
     <!-- About Me Section -->
     <section id="about" class="bg-white py-20 px-8 text-gray-800 relative">
         <div class="container mx-auto">
-            <h2 class="text-4xl font-semibold mb-6 text-center">About Me</h2>
-            <p class="text-lg leading-7 text-center max-w-3xl mx-auto mb-6">
+            <h2 class="text-4xl font-semibold mb-4 text-center">About Me</h2>
+            <p class="text-lg leading-7 text-center max-w-3xl mx-auto mb-8">
                 A driver of multi-million dollar programs, product lines, and management of global functions and P&L.
-                With skills and background as an engineer and in business development, settings and have utilized that same variety of skills in startups, as both an investor and founder.
+                Skilled as an engineer and in business development, in public and private companies, and utilized that same variety of skills in startups, as both an investor and founder.
             </p>
         </div>
-        <h2 class="text-3xl font-semibold mb-2 text-center">Skills</h2>
+        <h2 class="text-3xl font-semibold mb-4 text-center">Skills</h2>
         <ul class="text-center mb-6">
             <li>Strategic Planning</li>
             <li>Innovation Management</li>
             <li>P&L Management</li>
+            <li>R&D Portfolio Management</li>
+            <li>Data Analytics</li>
+            <li>Biometrics</li>
+            <li>Product Development</li>
+            <li>Program Management</li>
+            <li>Payment Solutions</li>
+            <li>SaaS</li>
+            <li>Fiber Optics</li>
+            <li>3D Vision Systems</li>
+            <li>AI/ML</li>
+            <li>Python</li>
+            <li>Node js</li>
+            <li>SQL</li>
             <!-- more items here -->
         </ul>
         <!-- Chevron -->
@@ -488,7 +503,6 @@
     <section id="contact" class="bg-gray-800 text-white py-20 px-8">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-semibold mb-6">Contact Me</h2>
-            <p class="text-lg mb-6">Get in touch via email or connect with me on LinkedIn.</p>
             <!-- Email Me Button with Icon -->
             <a href="#" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500 mr-4" id="emailButton">
                 <i class="fas fa-envelope mr-2"></i> Email
@@ -540,6 +554,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
+
 
     document.getElementById('emailButton').addEventListener('click', function(event) {
         event.preventDefault(); // Prevent default link behavior (hashtag behavior)
@@ -587,6 +606,22 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 2000);
     }
 
+
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        const menuToggle = document.querySelector('.menu-toggle');
+        
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('active'); // Adds a class to change the appearance of the menu button
+    }
+
+    // Close the menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.remove('active');
+        });
+    });
 
 
 
