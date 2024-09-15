@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Niosha Kayhani - Resume</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    
     <script src="config.js"></script>
     <!-- Link to your favorite font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
@@ -18,6 +18,13 @@
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Intro.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/intro.js/minified/introjs.min.css">
+
+    <!-- Intro.js JavaScript -->
+    <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RHJFCMN163"></script>
@@ -53,6 +60,25 @@
     </nav>
 
 
+<!--   Hero Section with Video 
+    <section id="hero" class="bg-gray-900 text-white h-screen flex justify-center items-center text-center relative overflow-hidden">
+       
+        <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover z-0">
+            <source src="static/video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        
+        <div class="relative z-10">
+            <h1 class="text-6xl font-bold mb-4">Niosha Kayhani</h1>
+            <p class="text-2xl mb-8">CEng, MSc, BEng, MBA, PMP | Board Member | 10+ U.S. Patents</p>
+            <a href="#about" class="bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-500 transition">Explore My Journey</a>
+        </div>
+
+        
+        <div class="absolute inset-0 bg-black opacity-50 z-5"></div>
+    </section> -->
+
 
     <!-- Hero Section -->
     <section id="hero" class="bg-gray-900 text-white h-screen flex flex-col justify-center items-center text-center">
@@ -70,42 +96,96 @@
 
 
 
-    <!-- About Me Section -->
-    <section id="about" class="bg-white py-20 px-8 text-gray-800 relative">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-semibold mb-4 text-center">About Me</h2>
-            <p class="text-lg leading-7 text-center max-w-3xl mx-auto mb-8">
-                A driver of multi-million dollar programs, product lines, and management of global functions and P&L.
-                Skilled as an engineer and in business development, in public and private companies, and utilized that same variety of skills in startups, as both an investor and founder.
-            </p>
-        </div>
-        <h2 class="text-3xl font-semibold mb-4 text-center">Skills</h2>
-        <ul class="text-center mb-6">
-            <li>Strategic Planning</li>
-            <li>Innovation Management</li>
-            <li>P&L Management</li>
-            <li>R&D Portfolio Management</li>
-            <li>Data Analytics</li>
-            <li>Biometrics</li>
-            <li>Product Development</li>
-            <li>Program Management</li>
-            <li>Payment Solutions</li>
-            <li>SaaS</li>
-            <li>Fiber Optics</li>
-            <li>3D Vision Systems</li>
-            <li>AI/ML</li>
-            <li>Python</li>
-            <li>Node js</li>
-            <li>SQL</li>
-            <!-- more items here -->
-        </ul>
-        <!-- Chevron -->
-        <div class="scroll-down-chevron" data-scroll-to="#experience">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="6 9 12 15 18 9" stroke="#111827"></polyline>
-            </svg>
-        </div>
-    </section>
+   <!-- About Me Section -->
+   <section id="about" class="bg-white py-20 px-8 text-gray-800 relative">
+       <div class="container mx-auto">
+           <h2 class="text-4xl font-semibold mb-4 text-center">About Me</h2>
+           <p class="text-lg leading-7 text-center max-w-3xl mx-auto mb-8">
+               A driver of multi-million dollar programs, product lines, and management of global functions and P&L. Skilled as an engineer and in business development, in public and private companies, and utilized that same variety of skills in startups, as both an investor and founder.
+           </p>
+       </div>
+
+       <!-- Skills Section -->
+       <h2 class="text-3xl font-semibold mb-4 text-center">Skills</h2>
+       <div class="container mx-auto">
+           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-center px-4">
+               <div class="bg-gray-100 p-4 shadow-sm hover:shadow-md transition">
+                   <i class="fas fa-chart-line text-blue-600 mb-2 text-2xl"></i>
+                   <p>Strategic Planning</p>
+               </div>
+               <div class="bg-gray-100 p-4 shadow-sm hover:shadow-md transition">
+                   <i class="fas fa-industry text-teal-600 mb-2 text-2xl"></i>
+                   <p>Lean Manufacturing</p>
+               </div>
+               <div class="bg-gray-100 p-4 shadow-sm hover:shadow-md transition">
+                   <i class="fas fa-coins text-yellow-600 mb-2 text-2xl"></i>
+                   <p>P&L Management</p>
+               </div>
+               <div class="bg-gray-100 p-4 shadow-sm hover:shadow-md transition">
+                   <i class="fas fa-flask text-purple-600 mb-2 text-2xl"></i>
+                   <p>R&D / Innovation</p>
+               </div>
+               <div class="bg-gray-100 p-4 rounded-md shadow-sm hover:shadow-md transition">
+                   <i class="fas fa-chart-pie text-pink-600 mb-2 text-2xl"></i>
+                   <p>Data Analytics</p>
+               </div>
+               <div class="bg-gray-100 p-4 rounded-md shadow-sm hover:shadow-md transition">
+                   <i class="fas fa-fingerprint text-indigo-600 mb-2 text-2xl"></i>
+                   <p>Biometrics</p>
+               </div>
+               <div class="bg-gray-100 p-4 rounded-md shadow-sm hover:shadow-md transition">
+                   <i class="fas fa-cogs text-red-600 mb-2 text-2xl"></i>
+                   <p>Product Development</p>
+               </div>
+               <div class="bg-gray-100 p-4 rounded-md shadow-sm hover:shadow-md transition">
+                   <i class="fas fa-tasks text-teal-600 mb-2 text-2xl"></i>
+                   <p>Program Management</p>
+               </div>
+               <div class="bg-gray-100 p-4 rounded-md shadow-sm hover:shadow-md transition">
+                   <i class="fas fa-credit-card text-orange-600 mb-2 text-2xl"></i>
+                   <p>Payment Solutions</p>
+               </div>
+               <div class="bg-gray-100 p-4 rounded-md shadow-sm hover:shadow-md transition">
+                   <i class="fas fa-cloud text-blue-400 mb-2 text-2xl"></i>
+                   <p>SaaS</p>
+               </div>
+               <div class="bg-gray-100 p-4 rounded-md shadow-sm hover:shadow-md transition">
+                   <i class="fas fa-circle-notch text-blue-600 mb-2 text-2xl"></i>
+                   <p>Fiber Optics</p>
+               </div>
+
+               <div class="bg-gray-100 p-4 rounded-md shadow-sm hover:shadow-md transition">
+                   <i class="fas fa-cube text-blue-800 mb-2 text-2xl"></i>
+                   <p>3D Vision Systems</p>
+               </div>
+               <div class="bg-gray-100 p-4 rounded-md shadow-sm hover:shadow-md transition">
+                   <i class="fas fa-robot text-purple-400 mb-2 text-2xl"></i>
+                   <p>Artificial Intelligence</p>
+               </div>
+               <div class="bg-gray-100 p-4 rounded-md shadow-sm hover:shadow-md transition">
+                   <i class="fab fa-python text-yellow-500 mb-2 text-2xl"></i>
+                   <p>Python</p>
+               </div>
+               <div class="bg-gray-100 p-4 rounded-md shadow-sm hover:shadow-md transition">
+                   <i class="fab fa-node-js text-green-500 mb-2 text-2xl"></i>
+                   <p>Node.js</p>
+               </div>
+               <div class="bg-gray-100 p-4 rounded-md shadow-sm hover:shadow-md transition">
+                   <i class="fas fa-database text-red-500 mb-2 text-2xl"></i>
+                   <p>SQL</p>
+               </div>
+               <!-- Add more skills here if needed -->
+           </div>
+       </div>
+
+       <!-- Chevron -->
+       <div class="scroll-down-chevron mt-8" data-scroll-to="#experience">
+           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+               <polyline points="6 9 12 15 18 9" stroke="#111827"></polyline>
+           </svg>
+       </div>
+   </section>
+
 
 
 
@@ -114,6 +194,10 @@
     <section id="experience" class="py-20 px-8" style="background: #FCF9F4;">
         <div class="container mx-auto">
             <h2 class="text-4xl font-semibold mb-6 text-center" style="color: #1f2937;">Professional Experience</h2>
+            <!-- Download Resume Button with Icon -->
+            <a href="static/Niosha_Kayhani_Resume.pdf" class="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500" download>
+                <i class="fas fa-download"></i> <span>Download Resume</span>
+            </a>
             <div class="timeline">
 
                 <!-- Experience 1 -->
@@ -131,7 +215,7 @@
                                 <p class="text-sm text-gray-500">April 2024 - Present</p>
                             </div>
                         </div>
-                        <p class="text-gray-700 mb-5" style="font-weight: normal; text-align: left;">Enterprise workforce management software platform with AI algorithms and products...[read more]</p>
+                        <p class="text-gray-700 mb-5" style="font-weight: normal; text-align: left;">Enterprise workforce management software platform with AI inference and a new business model...[read more]</p>
                         <div class="flex space-x-2 mb-0">
                             <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Full-Time</span>
                             <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">San Diego, CA</span>
@@ -350,7 +434,8 @@
                     <div class="modal-content">
                         <h3 class="text-3xl font-semibold mb-4">CEO & Board Director</h3>
                         <p class="text-lg mb-4 font-semibold" style="color: #1f2937;">Stealth | San Diego, CA | April 2024 - Present</p>
-                        <p class="text-gray-700">Leading a workforce management enterprise software platform, utilizing AI models, hybrid cloud, and intuitive algorithms...</p>
+                        <p class="text-gray-700">Leading a workforce management enterprise software platform, utilizing a new business model, hybrid cloud, and intuitive AI algorithms and inference. <br>
+                        The startup is initially focused on the front-end recruitment and matchmaking capability before moving up the stack towards payroll, benefits, workforce management, and ultimately, end-to-end HRIS.</p>
                         <button onclick="closeModal('modal1')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
                     </div>
                 </div>
@@ -360,7 +445,8 @@
                     <div class="modal-content">
                         <h3 class="text-3xl font-semibold mb-4">Board Director</h3>
                         <p class="text-lg mb-4">ITS UK, London, UK | May 2019 - Present</p>
-                        <p class="text-gray-700">Supporting and influencing strategy, financial planning, and business operations...</p>
+                        <p class="text-gray-700">Support and influence strategy, financial planning, and business operations as part of BoD responsibility. Facilitate and host international delegations, sign memorandums of understanding with global institutions, and support the organization's growth.
+                        </p>
                         <button onclick="closeModal('modal2')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
                     </div>
                 </div>
@@ -370,7 +456,7 @@
                     <div class="modal-content">
                         <h3 class="text-3xl font-semibold mb-4">Executive Board Member</h3>
                         <p class="text-lg mb-4">UC San Diego, San Diego, CA | Feb 2022 - Present</p>
-                        <p class="text-gray-700">Supporting the establishment of policies, mentoring engineering students, and supporting recruitment efforts...</p>
+                        <p class="text-gray-700">Support establishment of policies and key strategic objectives, alongside mentorship of engineering students at UCSD and support of recruitment as part of the Corporate Affiliates Program (CAP).</p>
                         <button onclick="closeModal('modal3')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
                     </div>
                 </div>
@@ -380,10 +466,19 @@
                     <div class="modal-content">
                         <h3 class="text-3xl font-semibold mb-4">Director of International Programs & Products</h3>
                         <p class="text-lg mb-4">Cubic, San Diego, CA | July 2022 - May 2024</p>
-                        <p class="text-gray-700">Led P&L for Cubic’s e-commerce business, serving over 75 federal, state, and local agencies...</p>
+                        <ul class="text-gray-700 text-left">
+                            Led P&L for Cubic’s e-commerce business, serving over 75 federal, state, local, and international agencies with software solutions for forensic analysis and intelligence capabilities.
+                        </ul>
+                        <ul class="text-gray-700 list-disc pl-8 text-left">
+                            <li>Built and grew global partnership pipeline, including resellers, agents, sales reps, and integrators from 4 to 18 in less than 2 years, leading to 17% topline growth.</li>
+                            <li>Directed cross-functional teams to drive customer satisfaction, meet SLAs, and ensure data compliance.</li>
+                            <li>Automated processes for ordering, fulfillment, and data ingestion, enhancing operational efficiency by >35%.</li>
+                            <li>Developed and executed go-to-market strategies for new product launches and regional expansions, achieving 17% revenue growth in 2023 at 40% gross margin.</li>
+                        </ul>
                         <button onclick="closeModal('modal4')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
                     </div>
                 </div>
+
 
                 <!-- Modal for Experience 5 -->
                 <div id="modal5" class="modal hidden">
@@ -464,37 +559,176 @@
     <!-- Education Section -->
     <section id="education" class="bg-white py-20 px-8">
         <div class="container mx-auto">
-            <h2 class="text-4xl font-semibold mb-10 text-center">Education</h2>
-            <div class="flex flex-col space-y-6 items-center">
-                <div>
-                    <h3 class="text-2xl font-semibold">MBA, Warwick Business School</h3>
-                    <p class="text-sm text-gray-600">Distinction | Focus: Finance, Innovation</p>
+            <h2 class="text-4xl font-semibold mb-10 text-center text-gray-800">Education</h2>
+            <div class="relative">
+                <!-- Vertical Line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-300"></div>
+                
+                <!-- Education Item 1 -->
+                <div class="education-item flex flex-col items-center mb-12 relative z-10">
+                    <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center w-full md:w-2/3 flex flex-col items-center">
+                        <h3 class="text-xl font-semibold" style="font-size: 20px;">MBA, Master of Business Administration</h3>
+                        <p class="text-sm text-gray-600">Warwick Business School</p>
+                        <p class="text-sm text-gray-600">Distinction | Focus: Finance, Innovation & New Venture Creation</p>
+                    </div>
                 </div>
-                <div>
-                    <h3 class="text-2xl font-semibold">MSc, Engineering & Management</h3>
-                    <p class="text-sm text-gray-600">Distinction | Focus: Fiber Optic Laser Systems</p>
+
+                <!-- Education Item 2 -->
+                <div class="education-item flex flex-col items-center mb-12 relative z-10">
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center w-full md:w-2/3 flex flex-col items-center">
+                        <h3 class="text-xl font-semibold" style="font-size: 20px;">MSc, Engineering & Management</h3>
+                        <p class="text-sm text-gray-600">University of Portsmouth</p>
+                        <p class="text-sm text-gray-600">Distinction | Focus: Fiber Optic Laser Systems & Manufacturing</p>
+                    </div>
                 </div>
-                <div>
-                    <h3 class="text-2xl font-semibold">BEng, Mechanical Engineering</h3>
-                    <p class="text-sm text-gray-600">First Class Honors</p>
+
+                <!-- Education Item 3 -->
+                <div class="education-item flex flex-col items-center mb-12 relative z-10">
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center w-full md:w-2/3 flex flex-col items-center">
+                        <h3 class="text-xl font-semibold" style="font-size: 20px;">BEng, Mechanical Engineering</h3>
+                        <p class="text-sm text-gray-600">University of Portsmouth</p>
+                        <p class="text-sm text-gray-600">First Class Honors | Focus: FEA, Manufacturing & Material Science</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
+
+    <!-- Additional Section -->
     <section id="additional" class="py-20 px-8" style="background: #FCF9F4;">
         <div class="container mx-auto">
-            <h2 class="text-4xl font-semibold mb-6 text-center" style="color: #1f2937;">Certifications and Qualifications</h2>
-            <div class="timeline">
-
-        
-
-                <div class="scroll-down-chevron" data-scroll-to="#another-section">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1a202c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
+            <h2 class="text-4xl font-semibold mb-6 text-center" style="color: #1f2937;">Achievements & Works</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Thesis Card -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-book-open text-4xl text-blue-600 mr-4"></i>
+                        <h3 class="text-xl font-semibold">Thesis</h3>
+                    </div>
+                    <p class="text-gray-700">Title: "The Impact of Emerging Technologies on Global Manufacturing." 
+                        <br>Published: 2020</p>
                 </div>
+
+                <!-- Projects Card -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-tasks text-4xl text-blue-600 mr-4"></i>
+                        <h3 class="text-xl font-semibold">Projects</h3>
+                    </div>
+                    <p class="text-gray-700">1. AI Workforce Platform<br>2. Fiber Optics Deployment<br>3. E-commerce Innovation Hub</p>
+                </div>
+
+                <!-- Certificates Card -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-certificate text-4xl text-blue-600 mr-4"></i>
+                        <h3 class="text-xl font-semibold">Certificates</h3>
+                    </div>
+                    <p class="text-gray-700">1. PMP Certification<br>2. Lean Manufacturing Specialist<br>3. Data Analytics Expert</p>
+                </div>
+
+                <!-- Patents Card -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-lightbulb text-4xl text-blue-600 mr-4"></i>
+                        <h3 class="text-xl font-semibold">Patents</h3>
+                    </div>
+                    <div class="text-gray-700 max-h-64 overflow-y-auto pr-2">
+                        <!-- Patent List -->
+                        <div class="space-y-4">
+                            <!-- Patent 1 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Self-initializing Machine Vision Sensors</strong></p>
+                                <p>Patent No: 11380013 · Issued: Jul 5, 2022</p>
+                                <a href="#" class="text-blue-600 hover:underline">See Patent</a>
+                            </div>
+                            
+                            <!-- Patent 2 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Adaptive Transit Resource Allocation</strong></p>
+                                <p>Patent No: 20210116259 · Issued: Apr 22, 2021</p>
+                                <a href="#" class="text-blue-600 hover:underline">See Patent</a>
+                            </div>
+                            
+                            <!-- Patent 3 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Dynamically Responsive Real-time Positioning Feedback System</strong></p>
+                                <p>Patent No: 10634501 · Issued: Apr 28, 2020</p>
+                                <a href="#" class="text-blue-600 hover:underline">See Patent</a>
+                            </div>
+                            
+                            <!-- Patent 4 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Tracked Ticket Validation and Feedback System</strong></p>
+                                <p>Patent No: 10600264 · Issued: Mar 24, 2020</p>
+                                <a href="#" class="text-blue-600 hover:underline">See Patent</a>
+                            </div>
+
+                            <!-- Patent 5 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Light Sequenced Card Validation</strong></p>
+                                <p>Patent No: 10346604 · Issued: Jul 9, 2019</p>
+                                <a href="#" class="text-blue-600 hover:underline">See Patent</a>
+                            </div>
+
+                            <!-- Patent 6 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Automated Scenario Recognition and Reporting Using Neural Networks</strong></p>
+                                <p>Patent No: 10331943 · Issued: Jun 25, 2019</p>
+                                <a href="#" class="text-blue-600 hover:underline">See Patent</a>
+                            </div>
+
+                            <!-- Patent 7 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Proximity Assisted Seamless Service (PASS)</strong></p>
+                                <p>Patent No: 10325480 · Issued: Jun 18, 2019</p>
+                                <a href="#" class="text-blue-600 hover:underline">See Patent</a>
+                            </div>
+
+                            <!-- Patent 8 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Encrypted Reverse Biometric Token Validation</strong></p>
+                                <p>Patent No: 20190097803 · Issued: Mar 28, 2019</p>
+                                <a href="#" class="text-blue-600 hover:underline">See Patent</a>
+                            </div>
+
+                            <!-- Patent 9 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Paper Transit Tickets as a Medium for Environmental Sampling</strong></p>
+                                <p>Patent No: 10132726 · Issued: Nov 20, 2018</p>
+                                <a href="#" class="text-blue-600 hover:underline">See Patent</a>
+                            </div>
+
+                            <!-- Patent 10 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Implicitly Trusted Travel Token Authentication</strong></p>
+                                <p>Patent No: 10108618 · Issued: Oct 23, 2018</p>
+                                <a href="#" class="text-blue-600 hover:underline">See Patent</a>
+                            </div>
+
+                            <!-- Patent 11 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Machine Learned Biometric Token</strong></p>
+                                <p>Patent No: 20170358148 · Issued: Dec 14, 2017</p>
+                                <a href="#" class="text-blue-600 hover:underline">See Patent</a>
+                            </div>
+
+                            <!-- Patent 12 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Anonymized Recruitment and Job Seeker Matching Platform</strong></p>
+                                <p>Patent No: 18/744,633 · Filed: Jun 16, 2024</p>
+                                <a href="#" class="text-blue-600 hover:underline">See Patent</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
@@ -503,7 +737,7 @@
     <section id="contact" class="bg-gray-800 text-white py-20 px-8">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-semibold mb-6">Contact Me</h2>
-            <p class="text-lg mb-6">Get in touch via email or connect with me on LinkedIn.</p>
+            <p class="text-lg mb-6">Get in touch via email or LinkedIn or download my resume.</p>
             
             <!-- Email Me Button with Icon -->
             <a href="#" class="contact-button bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500 mr-6" id="emailButton">
@@ -636,5 +870,6 @@ function toggleMenu() {
           once: true       // Whether animation should happen only once or every time you scroll
         });
     </script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -642,5 +642,35 @@ html {
 
 
 
+/* CSS for icon change */
+.read-more-icon {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.read-more-icon i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Tappable area expansion for mobile */
+.read-more-icon::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    top: -5px;
+    bottom: -5px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
