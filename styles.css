@@ -474,8 +474,26 @@ html {
     width: 100%;
 }
 
+/* Timeline Container */
+.timeline2 {
+    position: relative;
+    margin: 0 auto;
+    padding: 40px 0;
+    max-width: 800px;
+    width: 100%;
+}
+
 /* Timeline Item */
 .timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 50px;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Timeline Item */
+.timeline-item2 {
     position: relative;
     margin-bottom: 50px;
     padding-left: 50px;
@@ -491,13 +509,39 @@ html {
     top: 0;
     width: 20px;
     height: 20px;
-    background-color: #4CAF50;
+    background-color: #79c298;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Timeline Marker (circle) */
+.timeline-item2::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
     border-radius: 50%;
     z-index: 1;
 }
 
 /* Timeline Line */
 .timeline-item::after {
+    content: "";
+    position: absolute;
+    max-height: 205px;
+    left: 24px;
+    top: 0;
+    bottom: -50px;
+    width: 2px;
+    background-color: #ddd;
+    z-index: 0;
+}
+
+/* Timeline Line */
+.timeline-item2::after {
     content: "";
     position: absolute;
     max-height: 205px;
@@ -537,7 +581,7 @@ html {
 /* Dates */
 .timeline-content p:first-of-type {
     font-size: 0.9rem;
-    color: #4CAF50;
+    color: #49a471;
     margin-bottom: 10px;
 }
 
@@ -564,6 +608,23 @@ html {
     right: 24px;
 }
 
+
+/* Timeline items that alternate sides */
+.timeline-item2:nth-child(even) {
+    flex-direction: row-reverse;
+    padding-right: 50px;
+    padding-left: 0;
+}
+
+.timeline-item2:nth-child(even)::before {
+    left: auto;
+    right: 15px;
+}
+
+.timeline-item2:nth-child(even)::after {
+    left: auto;
+    right: 24px;
+}
 
 
 
@@ -665,6 +726,22 @@ html {
 
 
 
+/* Responsive font sizes using clamp */
+.responsive-text {
+    font-size: clamp(14px, 2vw, 18px);
+}
+
+.responsive-heading-1 {
+    font-size: clamp(24px, 5vw, 48px);
+}
+
+.responsive-heading-2 {
+    font-size: clamp(20px, 4vw, 36px);
+}
+
+.responsive-heading-3 {
+    font-size: clamp(18px, 3vw, 28px);
+}
 
 
 
