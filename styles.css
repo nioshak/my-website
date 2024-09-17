@@ -770,46 +770,54 @@ html {
 }
 
 
-/* Default font size for larger screens */
-body {
-    font-size: 1rem;
-}
-
-/* Font size adjustments for different screen sizes */
-@media (max-width: 1024px) {
-    body {
-        font-size: 0.95rem;
-    }
+/* General text resizing */
+.responsive-text {
+    font-size: 1.1rem; /* Default size */
 }
 
 @media (max-width: 768px) {
-    body {
-        font-size: 0.9rem;
+    .responsive-text {
+        font-size: 1.0rem; /* Medium screens */
     }
 }
 
 @media (max-width: 480px) {
-    body {
-        font-size: 0.85rem;
+    .responsive-text {
+        font-size: 0.9rem; /* Small screens */
+    }
+}
+/* General text resizing */
+.responsive-text-p {
+    font-size: 0.85rem; /* Default size */
+}
+
+@media (max-width: 768px) {
+    .responsive-text-p {
+        font-size: 0.8rem; /* Medium screens */
     }
 }
 
-/* Further adjustments for very small screens */
-@media (max-width: 360px) {
-    body {
-        font-size: 0.8rem;
-    }
-    h3 {
-        font-size: 1.4rem;
+@media (max-width: 480px) {
+    .responsive-text-p {
+        font-size: 0.7rem; /* Small screens */
     }
 }
 
-
-.text-overflow {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+/* General text resizing */
+.responsive-text-b {
+    font-size: 1rem; /* Default size */
 }
 
+@media (max-width: 768px) {
+    .responsive-text-b {
+        font-size: 0.9rem; /* Medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .responsive-text-b {
+        font-size: 0.8rem; /* Small screens */
+    }
+}
 
 
