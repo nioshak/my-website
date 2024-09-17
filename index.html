@@ -108,14 +108,14 @@
        <!-- Skills Section -->
        <h2 class="text-3xl font-semibold mb-4 text-center">Skills</h2>
        <div class="container mx-auto">
-           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-center px-4">
+           <div class="grid grid-cols-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-center px-4">
                <div class="bg-gray-100 p-4 shadow-sm hover:shadow-md transition">
                    <i class="fas fa-chart-line text-blue-600 mb-2 text-2xl"></i>
                    <p>Strategic Planning</p>
                </div>
                <div class="bg-gray-100 p-4 shadow-sm hover:shadow-md transition">
                    <i class="fas fa-industry text-teal-600 mb-2 text-2xl"></i>
-                   <p>Lean Manufacturing</p>
+                   <p style="font-size: 1rem;">Lean Manufacturing</p>
                </div>
                <div class="bg-gray-100 p-4 shadow-sm hover:shadow-md transition">
                    <i class="fas fa-coins text-[#ed914b] mb-2 text-2xl"></i>
@@ -179,11 +179,11 @@
        </div>
 
        <!-- Chevron -->
-       <div class="scroll-down-chevron mt-8" data-scroll-to="#experience">
+<!--        <div class="scroll-down-chevron mt-8" data-scroll-to="#experience">
            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                <polyline points="6 9 12 15 18 9" stroke="#111827"></polyline>
            </svg>
-       </div>
+       </div> -->
    </section>
 
 
@@ -231,7 +231,7 @@
                                 <img src="static/logo2.png" alt="ITS UK" class="w-10 h-10 mr-3" style="margin-top:3px;">
                                 <div>
                                     <h3 class="text-xl font-semibold" style="text-align: left;">Board Director</h3>
-                                    <p class="text-sm text-gray-600">Intelligent Transport Systems UK</p>
+                                    <p class="text-sm text-gray-600" style="text-align: left;">Intelligent Transport Systems UK</p>
                                 </div>
                             </div>
                             <div class="text-right">
@@ -322,7 +322,7 @@
                             <div class="flex items-start">
                                 <img src="static/logo6.png" alt="Google" class="w-10 h-10 mr-3" style="margin-top:3px;">
                                 <div>
-                                    <h3 class="text-xl font-semibold" style="text-align: left;">GCE Account Strategist</h3>
+                                    <h3 style="text-align: left;">GCE Account Strategist</h3>
                                     <p class="text-sm text-gray-600" style="text-align: left;">Google</p>
                                 </div>
                             </div>
@@ -418,7 +418,7 @@
                                 </div>
                             </div>
                             <div class="text-right">
-                                <p class="text-sm text-gray-500">< 2009</p>
+                                <p class="text-sm text-gray-500"><2009</p>
                             </div>
                         </div>
                         <p class="text-gray-700 mb-5" style="font-weight: normal; text-align: left">Worked for early stage startup in the new smartphone era, and other roles...[read more]</p>
@@ -557,7 +557,7 @@
                 <div id="modal10" class="modal hidden">
                     <div class="modal-content">
                         <h3 class="text-3xl font-semibold mb-4">Engineering & Business Development</h3>
-                        <p class="text-lg mb-4">TopUpTunes, Kashec, Natuzzi | < 2009</p>
+                        <p class="text-lg mb-4">TopUpTunes, Kashec, Natuzzi | <2009</p>
                         <ul class="text-gray-700 text-left mb-2">Held various roles in engineering and business development, contributing to product growth and innovation. </ul>
                         <ul class="text-gray-700 list-disc pl-8 text-left">
                         <li>Produced digital mobile ring tones and released to public during the smartphone surge in 2007/2008.</li>
@@ -597,7 +597,7 @@
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="bg-[#F7F7F7] p-6 rounded-lg text-center w-full md:w-2/3 flex flex-col items-center" style="color: #222120;">
-                        <h3 class="text-xl font-semibold" style="font-size: 20px;">MBA, Master of Business Administration</h3>
+                        <h3 class="text-xl font-semibold" style="font-size: 20px;">MBA, Business Administration</h3>
                         <p class="text-sm text-[#222120]">Warwick Business School</p>
                         <p class="text-sm text-[#222120]">Distinction | Focus: Finance, Innovation & New Venture Creation</p>
                     </div>
@@ -634,7 +634,7 @@
                 <!-- Thesis Card -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
                     <div class="flex items-center mb-4">
-                        <i class="fas fa-book-open text-4xl text-blue-600 mr-4"></i>
+                        <i class="fas fa-book-open text-4xl text-[#ed914b] mr-4"></i>
                         <h3 class="text-xl font-semibold">Thesis</h3>
                     </div>
                     <div class="text-gray-700 max-h-64 overflow-y-auto pr-2" id="thesis-list">
@@ -642,11 +642,12 @@
                         <div class="space-y-4">
                             <!-- Thesis 1 -->
                             <div class="border-b border-gray-300 pb-2">
-                                <div class="flex justify-between items-center">
-                                    <p>"How to Create a Corporate Innovation Strategy"</p>
+                                <div class="justify-center">
+                                    <p>How to Create a Corporate Innovation Strategy
                                     <button class="focus:outline-none" onclick="toggleDetails('thesis1')">
                                         <i class="fas fa-chevron-down text-blue-600"></i>
                                     </button>
+                                </p>
                                 </div>
                                 <div id="thesis1" class="text-sm text-gray-500 hidden">
                                     Published: 2021
@@ -655,11 +656,12 @@
 
                             <!-- Thesis 2 -->
                             <div class="border-b border-gray-300 pb-2">
-                                <div class="flex justify-between items-center">
-                                    <p>"Scalable Biometric Travel Token without Barriers to Access"</p>
+                                <div class="justify-center">
+                                    <p>Scalable Biometric Travel Token without Barriers to Access
                                     <button class="focus:outline-none" onclick="toggleDetails('thesis2')">
                                         <i class="fas fa-chevron-down text-blue-600"></i>
                                     </button>
+                                </p>
                                 </div>
                                 <div id="thesis2" class="text-sm text-gray-500 hidden">
                                     Published: 2017
@@ -668,11 +670,12 @@
 
                             <!-- Thesis 3 -->
                             <div class="border-b border-gray-300 pb-2">
-                                <div class="flex justify-between items-center">
-                                    <p>"Thermo-Optical Characterisation of 1kW Capable CW Fiber Lasers"</p>
+                                <div class="justify-center">
+                                    <p>Thermo-Optical Characterisation of 1kW Capable CW Fiber Lasers
                                     <button class="focus:outline-none" onclick="toggleDetails('thesis3')">
                                         <i class="fas fa-chevron-down text-blue-600"></i>
                                     </button>
+                                </p>
                                 </div>
                                 <div id="thesis3" class="text-sm text-gray-500 hidden">
                                     Published: 2014
@@ -681,11 +684,12 @@
 
                             <!-- Thesis 4 -->
                             <div class="border-b border-gray-300 pb-2">
-                                <div class="flex justify-between items-center">
-                                    <p>"Improving Thermal Management & Spectral Performance of Fiber Bragg Gratings"</p>
+                                <div class="justify-center">
+                                    <p>Thermal Management & Spectral Performance of Fiber Bragg Gratings
                                     <button class="focus:outline-none" onclick="toggleDetails('thesis4')">
                                         <i class="fas fa-chevron-down text-blue-600"></i>
                                     </button>
+                                </p>
                                 </div>
                                 <div id="thesis4" class="text-sm text-gray-500 hidden">
                                     Published: 2013
@@ -695,10 +699,11 @@
                             <!-- Thesis 5 -->
                             <div class="border-b border-gray-300 pb-2">
                                 <div class="flex justify-between items-center">
-                                    <p>"Elimination of Silicone Contamination & Process Improvement"</p>
+                                    <p>"Elimination of Silicone Contamination & Process Improvement"
                                     <button class="focus:outline-none" onclick="toggleDetails('thesis5')">
                                         <i class="fas fa-chevron-down text-blue-600"></i>
                                     </button>
+                                </p>
                                 </div>
                                 <div id="thesis5" class="text-sm text-gray-500 hidden">
                                     Published: 2012
@@ -708,7 +713,7 @@
                     </div>
 
                     <!-- Scroll Indicator for Mobile -->
-                    <div id="scroll-indicator" class="flex justify-center mt-4">
+                    <div id="thesis-scroll-indicator" class="flex justify-center mt-4">
                         <i class="fas fa-chevron-down text-gray-500 animate-bounce"></i>
                     </div>
                 </div>
@@ -719,25 +724,209 @@
                 <!-- Projects Card -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
                     <div class="flex items-center mb-4">
-                        <i class="fas fa-tasks text-4xl text-blue-600 mr-4"></i>
+                        <i class="fas fa-tasks text-4xl text-[#ed914b] mr-4"></i>
                         <h3 class="text-xl font-semibold">Projects</h3>
                     </div>
-                    <p class="text-gray-700">1. AI Workforce Platform<br>2. Fiber Optics Deployment<br>3. E-commerce Innovation Hub</p>
+                    <div class="text-gray-700 max-h-64 overflow-y-auto pr-2" id="project-list">
+                        <!-- Project List -->
+                        <div class="space-y-4">
+                            <!-- Project 1 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Gateless Gatelines</strong></p>
+                                <p class="text-sm text-gray-500">Machine vision, biometrics, and object tracking to improve passenger flow.</p>
+                            </div>
+
+                            <!-- Project 2 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>RUC Mobile App</strong></p>
+                                <p class="text-sm text-gray-500">Co-developed a Road User Charging app in React Native with TfL.</p>
+                            </div>
+
+                            <!-- Project 3 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Entrepreneurship-in-Residence Program</strong></p>
+                                <p class="text-sm text-gray-500">Introduced a program to develop talent at Cubic.</p>
+                            </div>
+
+                            <!-- Project 4 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>International Partnerships</strong></p>
+                                <p class="text-sm text-gray-500">Established partnerships with global transit authorities and operators.</p>
+                            </div>
+
+                            <!-- Project 5 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Robotics in Laser Engineering</strong></p>
+                                <p class="text-sm text-gray-500">Introduced SCARA robotics to fiber optic laser engineering, saving costs.</p>
+                            </div>
+
+                            <!-- Project 6 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Automated Invoicing at Google</strong></p>
+                                <p class="text-sm text-gray-500">Implemented a “1-click” invoicing system, winning an innovation award.</p>
+                            </div>
+
+                            <!-- Project 7 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Irish Startup Leadership</strong></p>
+                                <p class="text-sm text-gray-500">Led a startup in Ireland by adopting a digital strategy.</p>
+                            </div>
+
+                            <!-- Project 8 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Thermal Dissipation for Self-Driving Cars</strong></p>
+                                <p class="text-sm text-gray-500">Worked on thermal management for Google’s self-driving car project.</p>
+                            </div>
+
+                            <!-- Project 9 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Google Chat Enhancements</strong></p>
+                                <p class="text-sm text-gray-500">Introduced globally adopted features to Google’s Chat product.</p>
+                            </div>
+
+                            <!-- Project 10 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>AiR4 Innovation Bids</strong></p>
+                                <p class="text-sm text-gray-500">Led and won several R&D/Innovation bids in the UK.</p>
+                            </div>
+
+                            <!-- Project 11 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Optimized Manufacturing Facility</strong></p>
+                                <p class="text-sm text-gray-500">Set up a new manufacturing facility for fiber optic laser systems.</p>
+                            </div>
+
+                            <!-- Project 12 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Workforce Planning Tool at Google</strong></p>
+                                <p class="text-sm text-gray-500">Introduced a tool for workforce planning across Google's service organization.</p>
+                            </div>
+
+                            <!-- Project 13 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>ITS UK Global Policy Influence</strong></p>
+                                <p class="text-sm text-gray-500">Led international relationships to influence global policies in transit.</p>
+                            </div>
+
+                            <!-- Project 14 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Automated Defect Reporting</strong></p>
+                                <p class="text-sm text-gray-500">Automated defect reporting and updated the CIS for manufacturing.</p>
+                            </div>
+
+                            <!-- Project 15 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Thermo-Optical Characterization</strong></p>
+                                <p class="text-sm text-gray-500">Worked on characterizing 1kW capable continuous wavelength fiber lasers.</p>
+                            </div>
+
+                            <!-- Project 16 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Thermal Management of Fiber Bragg Gratings</strong></p>
+                                <p class="text-sm text-gray-500">Improved thermal management and spectral performance of fiber bragg gratings.</p>
+                            </div>
+
+                            <!-- Project 17 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>New Manufacturing Line Setup</strong></p>
+                                <p class="text-sm text-gray-500">Led setup, installation, and commissioning of a new manufacturing line for fiber laser production.</p>
+                            </div>
+
+                            <!-- Project 18 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Automation in Fire Alarm Production</strong></p>
+                                <p class="text-sm text-gray-500">Introduced automation to reduce production time for fire alarm detectors.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Scroll Indicator for Mobile -->
+                       <div id="project-scroll-indicator" class="flex justify-center mt-4">
+                           <i class="fas fa-chevron-down text-gray-500 animate-bounce"></i>
+                       </div>
                 </div>
 
-                <!-- Certificates Card -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+
+                <!-- Certificates & Awards Card -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition relative">
                     <div class="flex items-center mb-4">
-                        <i class="fas fa-certificate text-4xl text-blue-600 mr-4"></i>
-                        <h3 class="text-xl font-semibold">Certificates</h3>
+                        <i class="fas fa-certificate text-4xl text-[#ed914b] mr-4"></i>
+                        <h3 class="text-xl font-semibold">Certificates & Awards</h3>
                     </div>
-                    <p class="text-gray-700">1. PMP Certification<br>2. Lean Manufacturing Specialist<br>3. Data Analytics Expert</p>
+                    <div class="text-gray-700 max-h-64 overflow-y-auto pr-2" id="certificate-list">
+                        <!-- Certificates & Awards List -->
+                        <div class="space-y-4">
+                            <!-- Certificate 1 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>PMI PMP Certification</strong></p>
+                                <p class="text-sm text-gray-500">Certification No: 2551366</p>
+                            </div>
+
+                            <!-- Certificate 2 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Chartered Engineer (IET)</strong></p>
+                                <p class="text-sm text-gray-500">Certification No: 1100189970</p>
+                            </div>
+
+                            <!-- Achievement 1 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Innovator of the Year Award</strong></p>
+                                <p class="text-sm text-gray-500">Awarded by Cubic</p>
+                            </div>
+
+                            <!-- Achievement 2 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>CEO Award</strong></p>
+                                <p class="text-sm text-gray-500">Awarded by Cubic</p>
+                            </div>
+
+                            <!-- Achievement 3 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>High-Potential Employee Classification</strong></p>
+                                <p class="text-sm text-gray-500">Achieved 5-tiered level promotions in 4 years</p>
+                            </div>
+
+                            <!-- Achievement 4 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Scholarship</strong></p>
+                                <p class="text-sm text-gray-500">University of Warwick (#1 globally for distance-learning MBA)</p>
+                            </div>
+
+                            <!-- Achievement 5 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Professor R.E.D Bishop Award</strong></p>
+                                <p class="text-sm text-gray-500">For academic excellence across the Faculty of Technology</p>
+                            </div>
+
+                            <!-- Achievement 6 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Valedictorian</strong></p>
+                                <p class="text-sm text-gray-500">Recognition for commitment and academic excellence</p>
+                            </div>
+
+                            <!-- Achievement 7 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Mechanical Engineering Excellent Project Prize</strong></p>
+                                <p class="text-sm text-gray-500">Best final year project in Mechanical Engineering</p>
+                            </div>
+
+                            <!-- Achievement 8 -->
+                            <div class="border-b border-gray-300 pb-4">
+                                <p><strong>Full Colours Excellence in Sports & Commitment</strong></p>
+                                <p class="text-sm text-gray-500">One of 15 awards granted annually</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Scroll Indicator for Mobile -->
+                       <div id="certificate-scroll-indicator" class="flex justify-center mt-4">
+                           <i class="fas fa-chevron-down text-gray-500 animate-bounce"></i>
+                       </div>
                 </div>
+
 
                 <!-- Patents Card -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
                     <div class="flex items-center mb-4">
-                        <i class="fas fa-lightbulb text-4xl text-blue-600 mr-4"></i>
+                        <i class="fas fa-lightbulb text-4xl text-[#ed914b] mr-4"></i>
                         <h3 class="text-xl font-semibold">Patents</h3>
                     </div>
                     <div class="text-gray-700 max-h-64 overflow-y-auto pr-2" id="patent-list">
@@ -847,17 +1036,17 @@
             <p class="text-lg mb-6">Get in touch via email or LinkedIn or download my resume.</p>
             
             <!-- Email Me Button with Icon -->
-            <a href="#" class="contact-button bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500 mr-6" id="emailButton">
+            <a href="#" class="contact-button bg-[#5489ae] text-white py-2 px-4 rounded-md hover:bg-[#76a1be] mr-6" id="emailButton">
                 <i class="fas fa-envelope"></i> <span>Email</span>
             </a>
 
             <!-- LinkedIn Button with Icon -->
-            <a href="https://www.linkedin.com/in/niosha-kayhani/" class="contact-button bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500 mr-6" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/niosha-kayhani/" class="contact-button bg-[#5489ae] text-white py-2 px-4 rounded-md hover:bg-[#76a1be] mr-6" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-linkedin"></i> <span>LinkedIn</span>
             </a>
             
             <!-- Download Resume Button with Icon -->
-            <a href="static/Niosha_Kayhani_Resume.pdf" class="contact-button bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500" download>
+            <a href="static/Niosha_Kayhani_Resume.pdf" class="contact-button bg-[#5489ae] text-white py-2 px-4 rounded-md hover:bg-[#76a1be]" download>
                 <i class="fas fa-download"></i> <span>Download Resume</span>
             </a>
         </div>
@@ -878,7 +1067,7 @@
                     <label for="message" class="block text-sm font-medium text-gray-800">Your Message</label>
                     <textarea id="message" name="message" class="mt-1 p-3 block w-full border border-gray-250 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200 transition text-black" rows="4" required></textarea>
                 </div>
-                <button type="submit" class="bg-blue-600 text-white py-3 px-5 rounded-lg hover:bg-blue-500 transition">Send Message</button>
+                <button type="submit" class="bg-[#5489ae] text-white py-3 px-5 rounded-lg hover:bg-[#76a1be] transition">Send Message</button>
             </form>
         </div>
     </section>
@@ -974,21 +1163,70 @@ function toggleMenu() {
         element.classList.toggle('hidden');
     }
 
-    // Scroll Event to Hide Arrow
-    const thesisList = document.getElementById('thesis-list');
-    const scrollIndicator = document.getElementById('scroll-indicator');
+    // // Scroll Event to Hide Arrow
+    // const thesisList = document.getElementById('thesis-list');
+    // const scrollIndicator = document.getElementById('scroll-indicator');
 
-    thesisList.addEventListener('scroll', () => {
-        scrollIndicator.style.display = 'none';
+    // thesisList.addEventListener('scroll', () => {
+    //     scrollIndicator.style.display = 'none';
+    // });
+
+    // // Scroll Event to Hide Arrow for Patent Section
+    // const patentList = document.getElementById('patent-list');
+    // const patentScrollIndicator = document.getElementById('patent-scroll-indicator');
+
+    // patentList.addEventListener('scroll', () => {
+    //     patentScrollIndicator.style.display = 'none';
+    // });
+
+    // // Scroll Event to Hide Arrow for Project Section
+    // const projectList = document.getElementById('project-list');
+    // const projectScrollIndicator = document.getElementById('project-scroll-indicator');
+
+    // projectList.addEventListener('scroll', () => {
+    //     projectScrollIndicator.style.display = 'none';
+    // });
+
+    // // Scroll Event to Hide Arrow for Certificates Section
+    // const certificatesList = document.getElementById('certificates-list');
+    // const certificatesScrollIndicator = document.getElementById('certificates-scroll-indicator');
+
+    // certificatesList.addEventListener('scroll', () => {
+    //     certificatesScrollIndicator.style.display = 'none';
+    // });
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Select all scrollable sections and their corresponding indicators
+        const scrollSections = [
+            { section: document.getElementById('project-list'), indicator: document.getElementById('project-scroll-indicator') },
+            { section: document.getElementById('thesis-list'), indicator: document.getElementById('thesis-scroll-indicator') },
+            { section: document.getElementById('certificate-list'), indicator: document.getElementById('certificate-scroll-indicator') },
+            { section: document.getElementById('patent-list'), indicator: document.getElementById('patent-scroll-indicator') }
+        ];
+
+        scrollSections.forEach(({ section, indicator }) => {
+            if (section && indicator) {
+                section.addEventListener('scroll', () => {
+                    // Check if the user has scrolled to the bottom
+                    if (section.scrollTop + section.clientHeight >= section.scrollHeight - 1) {
+                        indicator.style.display = 'none'; // Hide indicator when at the bottom
+                    } else {
+                        indicator.style.display = 'block'; // Show indicator otherwise
+                    }
+                });
+
+                // Initial check on page load
+                if (section.scrollHeight > section.clientHeight) {
+                    indicator.style.display = 'block';
+                } else {
+                    indicator.style.display = 'none';
+                }
+            }
+        });
     });
 
-    // Scroll Event to Hide Arrow for Patent Section
-    const patentList = document.getElementById('patent-list');
-    const patentScrollIndicator = document.getElementById('patent-scroll-indicator');
 
-    patentList.addEventListener('scroll', () => {
-        patentScrollIndicator.style.display = 'none';
-    });
 
 
     </script>

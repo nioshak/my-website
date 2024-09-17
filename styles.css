@@ -747,7 +747,69 @@ html {
 
 
 
+/* Pulse effect for the scroll indicator */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 
+/* Apply the pulse animation */
+.scroll-indicator {
+    animation: pulse 1.5s infinite;
+    transition: opacity 0.3s ease;
+}
+
+
+/* Default font size for larger screens */
+body {
+    font-size: 1rem;
+}
+
+/* Font size adjustments for different screen sizes */
+@media (max-width: 1024px) {
+    body {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.85rem;
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 360px) {
+    body {
+        font-size: 0.8rem;
+    }
+    h3 {
+        font-size: 1.4rem;
+    }
+}
+
+
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
 
 
