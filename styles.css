@@ -822,7 +822,7 @@ html {
 
 /* General text resizing */
 .responsive-text-l {
-    font-size: 1.2rem; /* Default size */
+    font-size: 1.1rem; /* Default size */
 }
 
 @media (max-width: 768px) {
