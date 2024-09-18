@@ -810,13 +810,13 @@ html {
 
 @media (max-width: 768px) {
     .responsive-text-b {
-        font-size: 0.9rem; /* Medium screens */
+        font-size: 0.95rem; /* Medium screens */
     }
 }
 
 @media (max-width: 480px) {
     .responsive-text-b {
-        font-size: 0.8rem; /* Small screens */
+        font-size: 0.9rem; /* Small screens */
     }
 }
 
