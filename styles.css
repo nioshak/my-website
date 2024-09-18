@@ -820,4 +820,38 @@ html {
     }
 }
 
+/* General text resizing */
+.responsive-text-l {
+    font-size: 1.2rem; /* Default size */
+}
+
+@media (max-width: 768px) {
+    .responsive-text-l {
+        font-size: 1.1rem; /* Medium screens */
+    }
+}
+
+@media (max-width: 415px) {
+    .responsive-text-l {
+        font-size: 1rem; /* Small screens */
+    }
+}
+
+@media (max-width: 400px) {
+    .responsive-text-l {
+        font-size: 0.95rem; /* Small screens */
+    }
+}
+
+@media (max-width: 380px) {
+    .responsive-text-l {
+        font-size: 0.9rem; /* Small screens */
+    }
+}
+
+@media (max-width: 360px) {
+    .responsive-text-l {
+        font-size: 0.85rem; /* Small screens */
+    }
+}
 
