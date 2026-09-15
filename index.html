@@ -205,10 +205,10 @@
         <div class="container mx-auto">
             <h2 class="text-4xl font-semibold mb-6 text-center" style="color: #1f2937;">Professional Experience</h2>
             <!-- Download Resume Button with Icon -->
-            <a href="static/Niosha_Kayhani_Resume.pdf" class="bg-[#5489ae] text-white py-2 px-4 rounded-md hover:bg-[#76a1be]" download>
+            <!-- <a href="static/Niosha_Kayhani_Resume.pdf" class="bg-[#5489ae] text-white py-2 px-4 rounded-md hover:bg-[#76a1be]" download>
                 <i class="fas fa-download"></i> <span>Download Resume</span>
             </a>
-            <div class="timeline">
+            <div class="timeline"> -->
 
                 <!-- Experience 1 -->
 <!--                 <div class="timeline-item" data-aos="fade-up">
@@ -233,8 +233,31 @@
                     </div>
                 </div> -->
 
-                <!-- Experience 2 -->
+                <!-- Experience 1 -->
                 <div class="timeline-item" data-aos="fade-up">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal1')" style="height: auto; width: 600px">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex items-start">
+                                <img src="static/logo12.png" alt="Stealth" class="w-10 h-10 mr-3" style="margin-top:3px;">
+                                <div>
+                                    <h3 class="responsive-text font-semibold" style="text-align: left;">Chief of Staff to the CEO</h3>
+                                    <p class="text-sm text-gray-600" style="text-align: left;">Muon Space</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <p class="responsive-text-p  text-gray-500">Feb 2026 - Present</p>
+                            </div>
+                        </div>
+                        <p class="responsive-text-b text-gray-700 mb-5" style="font-weight: normal; text-align: left;">Strategic advisor and thought partner to the CEO and the broader leadership team whilst also rolling sleeves up on key initiatives...[read more]</p>
+                        <div class="responsive-text-p flex space-x-2 mb-0">
+                            <span class="bg-green-100 text-green-800 font-medium px-2.5 py-0.5 rounded">Full-Time</span>
+                            <span class="bg-green-100 text-green-800 font-medium px-2.5 py-0.5 rounded">Mountain View, CA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item2" data-aos="fade-up">
                     <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer" onclick="openModal('modal2')" style="height: auto; width: 600px">
                         <div class="flex justify-between items-start mb-4">
                             <div class="flex items-start">
@@ -245,10 +268,10 @@
                                 </div>
                             </div>
                             <div class="text-right">
-                                <p class="responsive-text-p text-gray-500">May 2024 - Present</p>
+                                <p class="responsive-text-p text-gray-500">Apr 2024 - Feb 2026</p>
                             </div>
                         </div>
-                        <p class="responsive-text-b text-gray-700 mb-5" style="font-weight: normal; text-align: left;">Autonomous space collision avoidance platform...[read more]</p>
+                        <p class="responsive-text-b text-gray-700 mb-5" style="font-weight: normal; text-align: left;">Built a scalable software platform for satellite data dissemination, prediction algorithms and geospatial analytics and insights...[read more]</p>
                         <div class="responsive-text-p flex space-x-2 mb-0">
                             <span class="bg-green-100 text-green-800 font-medium px-2.5 py-0.5 rounded">Full-Time</span>
                             <span class="bg-green-100 text-green-800 font-medium px-2.5 py-0.5 rounded">San Diego, CA</span>
@@ -440,22 +463,27 @@
                 </div>
 
                 <!-- Modal for Experience 1 -->
-<!--                 <div id="modal1" class="modal hidden">
+                <div id="modal1" class="modal hidden">
                     <div class="modal-content">
-                        <h3 class="text-3xl font-semibold mb-4">CEO & Board Director</h3>
-                        <p class="text-lg mb-4">Opus Duo Inc., San Diego, CA | Apr 2024 - Present</p>
-                        <ul class="text-gray-700 text-left">Leading a workforce management enterprise software platform, utilizing a new business model, hybrid cloud, and intuitive AI algorithms and inference. <br><br>
-                        The startup is initially focused on the front-end recruitment and matchmaking capability before moving up the stack towards payroll, benefits, workforce management, and ultimately, end-to-end HRIS.</ul>
+                        <h3 class="text-3xl font-semibold mb-4">Chief of Staff to the CEO</h3>
+                        <p class="text-lg mb-4">Muon Space, Mountain View, CA | Feb 2026 - Present</p>
+                        <ul class="text-gray-700 text-left">Act as a strategic advisor and thought partner to the CEO and the broader leadership team.
+                        Strategic Leadership & Fundraising: Served as an integral part of the core executive team alongside the CEO and CFO to successfully drive a $250M Series C fundraise at a $1.5B valuation. Built the company's M&A playbook. <br><br>
+                        Operational Rhythm & Execution: Owned and ran company-wide OKR process. Introduced a disciplined operational cadence through monthly operating and business reviews, aligning the organization around key leading indicators and making the business predictable ahead of IPO ambitions. <br><br>
+                        Manufacturing Operations & Systems: Spearheaded special projects focused on production capacity management. Architected and led the trade study of a new Manufacturing Execution System (MES) alongside SAP deployment to scale hardware manufacturing capabilities.<br><br>
+                        Process Optimization: Implemented new business-wide processes to eliminate bottlenecks and bridge cross-functional alignment between engineering, production, and corporate strategy using BPMN.</ul>
                         <button onclick="closeModal('modal1')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
                     </div>
-                </div> -->
+                </div>
 
                 <!-- Modal for Experience Taurus Space -->
                 <div id="modal2" class="modal hidden">
                     <div class="modal-content">
                         <h3 class="text-3xl font-semibold mb-4">Founder</h3>
-                        <p class="text-lg mb-4">Taurus Space, San Diego, CA | May 2024 - Present</p>
-                        <ul class="text-gray-700 text-left">Taurus Space specializes in autonomous space collision avoidance, real-time space situational awareness, and advanced orbital data ingestion to support satellite operators, defense agencies, and commercial space enterprises. Leveraging AI-driven predictive modeling, machine learning algorithms, and real-time telemetry data, our system enhances collision risk mitigation, mission safety, and orbital sustainability in an increasingly congested space environment.
+                        <p class="text-lg mb-4">Taurus Space, San Diego, CA | Apr 2024 - Feb 2026</p>
+                        <ul class="text-gray-700 text-left">Architected and led the development of a scalable software platform for satellite data dissemination, prediction algorithms and geospatial analytics and insights. <br><br>
+
+                        Defined the roadmap from concept to C2 platform integration with U.S. Intelligence customers, and recruited a strong team to support.
                         </ul>
                         <button onclick="closeModal('modal2')" class="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-500">Close</button>
                     </div>
